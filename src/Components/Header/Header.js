@@ -1,7 +1,8 @@
+import s from './Header.module.css';
 
 function Header() {
   return (
-    <div>
+    <div className={s.Header}>
       <button>Projects</button>
       <button>Resume</button>
       <button>About</button>
