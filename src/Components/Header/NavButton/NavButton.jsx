@@ -1,8 +1,14 @@
+import {NavLink} from 'react-router-dom';
 
 const NavButton = (props) => {
     return (
-            <button>{props.label}</button>
-            // {`${props.label.toLowerCase()}.png`}
+        <button>
+            <NavLink to={props.href}>
+                {props.label}
+            </NavLink>
+
+        </button>
+
     )
 }
 
