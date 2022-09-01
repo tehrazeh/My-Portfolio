@@ -1,12 +1,12 @@
 import {NavLink} from 'react-router-dom';
 
 const NavButton = (props) => {
+
     return (
         <button>
-            <NavLink to={props.href}>
-                {props.label}
+            <NavLink to={`/${props.navButton.label.toLowerCase()}`}>
+                {props.navButton.label}
             </NavLink>
-
         </button>
 
     )

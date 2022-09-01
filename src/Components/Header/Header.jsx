@@ -5,7 +5,7 @@ import NavButton from './NavButton/NavButton'
 function Header(props) {
 
   let navButtons = props.navBar.navButtons.map( element => {
-    return <NavButton href={`/${element.label.toLowerCase()}`} key={element.id} label={element.label} />
+    return <NavButton navButton={element} key={element.id}/>
   })
 
   return (
