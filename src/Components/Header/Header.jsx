@@ -1,18 +1,30 @@
 import s from './Header.module.css';
 import NavButton from './NavButton/NavButton'
+import React from 'react'
 
 
-function Header(props) {
+class Header extends React.Component {
 
-  let navButtons = props.navBar.navButtons.map( element => {
-    return <NavButton navButton={element} key={element.id}/>
-  })
-
-  return (
-    <div className={s.Header}>
+  constructor(props) {
+    super(props)
+    this.state = {
+      buttonInfo: [
+        { id: 1, label: 'Projects' },
+        { id: 2, label: 'Resume' },
+        { id: 3, label: 'Contact' }
+      ]
+    }
+  }
+  render() {
+    let navButtons = this.state.buttonInfo.map(element => {
+      return <NavButton navButton={element} key={element.id} />
+    })
+    return (
+      <div className={s.Header}>
         {navButtons}
-    </div>
-  );
+      </div>
+    )
+  }
 }
 
 export default Header;

@@ -11,8 +11,8 @@ import { Route, Routes } from 'react-router-dom';
 function App(props) {
   return (
     <div className="App">
-      <Header navBar={props.state.navBar} />
-      <Sidebar sideBar={props.state.sideBar} />
+      <Header />
+      <Sidebar />
       <div className="content">
         <Routes>
           <Route path='/' element={<Main />} />
