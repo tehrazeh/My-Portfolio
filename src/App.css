@@ -3,7 +3,7 @@
     grid-template-columns: 0.2fr 1.2fr;
     grid-template-rows: 0.4fr 2fr 0.2fr;
     grid-template-areas:
-    "header header"
+    "headerHome headerNav"
     "sidebar main"
     "footer footer" ;
     grid-gap: 0.3rem;

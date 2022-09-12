@@ -8,7 +8,7 @@ const SidebarElement = (props) => {
     <button className={s.sideBarButton}>
         <img className={s.sideBarImage} src={require(`../Images/${props.sideButton.label.toLowerCase()}.png`)} 
         alt='sidebar pic'/>
-        <h3 className={s.buttonDiscriptionHover}>{props.sideButton.label}</h3>
+        <h3 className={s.buttonDiscription}>{props.sideButton.label}</h3>
     </button>
     let layout
     props.sideButton.redirect === 1 ?

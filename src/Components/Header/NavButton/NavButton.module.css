@@ -1,17 +1,17 @@
-.sideBarImage {
-    width: 140px;
-}
 
-.sideBarButton {
+.navBarButton {
     position: relative;
-    border-radius: 4px;
-    background-color: #003554;
+    border: 3.5px solid #22223b;
+    background-color: #4a4e69;
+    width: 120px;
     cursor: pointer;
-    margin: 10px;
 }
 
+.navBarImage {
+    width: 50px;
+}
 
-.buttonDiscription {
+.navBarButtonDescription {
     position: absolute;
     top: 0;
     left: 0;
@@ -25,10 +25,9 @@
     font-weight: bold;
     opacity: 0;
     margin: auto;
-    padding: 0;
     transition: opacity 0.25s;
 }
 
-.buttonDiscription:hover {
+.navBarButtonDescription:hover {
     opacity: 1
 }
