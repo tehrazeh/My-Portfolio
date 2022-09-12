@@ -11,7 +11,7 @@ class Header extends React.Component {
       buttonInfo: [
         { id: 1, label: 'Projects' },
         { id: 2, label: 'Resume' },
-        { id: 3, label: 'Contact' }
+        { id: 3, label: 'Contact' },
       ]
     }
   }
