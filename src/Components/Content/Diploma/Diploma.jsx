@@ -1,9 +1,19 @@
-
+import diplomaImage from './Images/diploma.png'
+import s from './Diploma.module.css'
 const Diploma = (props) => {
     return (
-        <div>
-            <p>Here is my diploma boys</p>
-            <img src='https://media.bitdegree.org/storage/media/images/2018/08/how-to-become-a-programmer.jpg' />
+        <div className={s.diplomaContainer}>
+            <h2>
+                Graduated: April, 2022 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;                  
+                GPA:3.87/4 (Honors)
+            </h2>
+            <img className={s.diplomaImage} alt='diploma' src={diplomaImage}/>
         </div>
     )
 }

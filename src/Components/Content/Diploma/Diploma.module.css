@@ -1,0 +1,13 @@
+.diplomaContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253, 236, 216);
+}
+
+
+.diplomaImage {
+    border: 5px rgb(89, 176, 253) solid;
+    margin-bottom: 15px;
+}
