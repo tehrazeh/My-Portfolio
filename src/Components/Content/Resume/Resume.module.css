@@ -1,0 +1,8 @@
+.ResumeBlock {
+    margin: 5px;
+    padding: 1px 8px;
+    border: 3px #379ba9 solid;
+    border-radius: 8px;
+    background-color: #246a73;
+    color:rgb(196, 213, 207);
+}
