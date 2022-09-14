@@ -6,8 +6,7 @@
 
 .contactContainer {
     width: 450px;
-    height: 100%;
-    margin: 15px;
+    margin: 10px;
     border: 3.5px solid #22223b;
     background-color: #4a4e69;
     display: flex;
