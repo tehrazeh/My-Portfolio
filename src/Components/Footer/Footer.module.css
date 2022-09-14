@@ -1,4 +1,7 @@
 .Footer {
+    text-align: center;
+    color: #f5ebe0;
+    font-size: 1.2em;
     grid-area: footer;
-    background-color: brown;
+    background-color: #2f3e46;
 }
