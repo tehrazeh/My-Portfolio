@@ -5,7 +5,7 @@ import Sidebar from './Components/Sidebar/Sidebar';
 import Main from './Components/Content/Main/Main';
 import Contact from './Components/Content/Contact/Contact';
 import Diploma from './Components/Content/Diploma/Diploma';
-import ProjectPage from './Components/Content/ProjectPage/ProjectPage';
+import Projects from './Components/Content/Projects/Projects';
 import Resume from './Components/Content/Resume/Resume';
 import { Route, Routes } from 'react-router-dom';
 function App(props) {
@@ -17,7 +17,7 @@ function App(props) {
         <Routes>
           <Route path='/' element={<Main />} />
           <Route path='/diploma' element={<Diploma />} />
-          <Route path='/projects' element={<ProjectPage />} />
+          <Route path='/projects' element={<Projects />} />
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
         </Routes>

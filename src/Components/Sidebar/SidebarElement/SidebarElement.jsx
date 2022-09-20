@@ -18,7 +18,6 @@ const SidebarElement = (props) => {
         <div>
             {layout}
         </div>
-
     )
 }
 
