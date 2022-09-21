@@ -1,0 +1,60 @@
+.projectContainer {
+    background-color: #858ae3;
+    border: 4px #613dc1 solid;
+    width: 300px;
+    height: 300px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dropdownMenu {
+
+    position: absolute;
+    left: 0;
+    top: calc(100% + 0.3rem);
+    background-color: #7478c0;
+    padding: .75rem;
+    border-radius: .25rem;
+    box-shadow: 0 2px 5px 0 rgb(0, 0, 0,  .2);
+    opacity: 0;
+}
+
+.dropdown > .dropdownButton:hover + .dropdownMenu {
+    opacity: 1;
+}
+
+
+.dropdownMenuContainer {
+    background-color: #6b6fb2;
+    width: 300px;
+    display: flex;
+    gap: 100px;
+    padding-left: 20px;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2px;
+    border-radius: 2px;
+    color: rgb(219, 227, 234);    
+}
+
+.skillsPic {
+    width: 40px;
+}
+
+span {
+    line-height: 30px;
+}
+
+.dropdownButton {
+    background-color: #6b6fb2;
+    border: 1px #5e619b solid;
+    border-radius: 2px;
+    padding: 10px;
+    margin: 4px;
+    color: rgb(219, 227, 234);
+    letter-spacing: 1px; 
+}

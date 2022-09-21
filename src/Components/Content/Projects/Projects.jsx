@@ -7,8 +7,13 @@ class Projects extends React.Component {
         super(props)
         this.state = {
             projects: [
-                {id: 1, title: 'Stats dont Lie'},
-                {id: 2, title: 'Pokemon App'}
+                {id: 1, title: 'Stats dont Lie',
+                skills: ['JavaScript' , 'HTML', 'CSS', 'GIT', 'API'],
+                description: 
+                `The app allows you to check stat averages of an NBA player for a specific season
+                It will show his picture, team, name, anthropometry and, of course, stats.
+                The custom badge system will reward player a badge if his average of specific stat
+                satisfies the minimum value.`}
             ]
         }
     }
