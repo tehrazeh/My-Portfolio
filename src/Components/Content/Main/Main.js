@@ -15,7 +15,7 @@ function Main() {
             <li>JavaScript, HTML, CSS</li>
             <li>React, TypeScript, Redux</li>
             <li>Relational Databases, REST API</li>
-            <li>SOLID, OOP, Java</li>
+            <li>SOLID, OOP, Java, Git</li>
           </ul>
           <h2>Knowledgeable in:</h2>
           <ul>
