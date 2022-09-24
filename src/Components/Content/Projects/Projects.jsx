@@ -9,6 +9,9 @@ class Projects extends React.Component {
             projects: [
                 {id: 1, title: 'Stats dont Lie',
                 skills: ['JavaScript' , 'HTML', 'CSS', 'GIT', 'API'],
+                imagesFolder: 'stats-dont-lie-images',
+                images: ['1', '2', '3', '4', '5'],
+                repository: 'stats-dont-lie',
                 description: 
                 `The app allows you to check stat averages of an NBA player for a specific season
                 It will show his picture, team, name, anthropometry and, of course, stats.
