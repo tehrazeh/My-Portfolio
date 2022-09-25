@@ -8,7 +8,26 @@
 
 
 .diplomaImage {
-    width: 100%;
+    width: 90%;
     border: 5px rgb(89, 176, 253) solid;
     margin-bottom: 15px;
+}
+
+.diplomaBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.diplomaBlock > div {
+    color: #faa792;
+    padding: 10px;
+    background-color: #720026;
+    border: 3px solid #4f000b;
+}
+
+.diplomaBlock > div:hover {
+    filter:brightness(1.2);
 }
