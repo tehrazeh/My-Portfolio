@@ -1,5 +1,6 @@
 .projectContainer {
     margin: 0;
+    width: 100%;
     background-color: #858ae3;
     border: 4px #613dc1 solid;
     text-align: center;
@@ -12,6 +13,8 @@
 
 .dropdownContainer {
     display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
 }
 
 .projectTitle {
@@ -94,33 +97,8 @@ span {
 }
 
 
-.imageGrid {
-    --gap: 16px;
-    --numOfCols: 3;
-    --numOfRows: 4;
-    box-sizing: border-box;
-    padding: var(--gap);
-    display: grid;
-    grid-template-columns: repeat(var(--numOfCols), 1fr);
-    grid-template-rows: repeat(var(--numOfRows), 1fr);
-    gap: var(--gap);    
-}
-
-.imageGrid > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
-    object-fit: contain;
-}
 
 
-.image1, .image3 {
-    grid-column: span 2;
-}
-
-.image2 {
-    height: 100%;
-}
 
 
 

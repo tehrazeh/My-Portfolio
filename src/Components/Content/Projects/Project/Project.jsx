@@ -1,11 +1,11 @@
 import s from './Project.module.css';
-import gitHubImage from '../../../Sidebar/Images/github.png'
-import { getProjectInfo } from '../../../../Api/api';
+import gitHubImage from '../../../Sidebar/Images/github.png';
+import ImageSlider from '../ImageSlider/ImageSlider';
 
 
 const Project = (props) => {
 
-    let skills = props.projectData.skills.map(skill => {
+    const skills = props.projectData.skills.map(skill => {
         return (
             <div className={s.dropdownMenuContainer} key={skill}>
                 <img className={s.skillsPic} src={require(`../Images/${skill.toLowerCase()}.png`)}
@@ -15,15 +15,7 @@ const Project = (props) => {
         )
     })
 
-    let projectInfo = getProjectInfo(props.projectData.repository);
-    console.log(projectInfo)
 
-    // let images = props.projectData.images.map(image => {
-    //     return (
-    //         <img className={`image${image}`} src={require(`../${props.projectData.imagesFolder}/${image}.png`)}
-    //                 alt={`screenshot ${image}`}/>
-    //     )
-    // }) 
     return (
         <div className={s.projectContainer}>
             <div className={s.projectTitle}>
@@ -52,18 +44,21 @@ const Project = (props) => {
                         </div>
                 </div>            
                 <div className={s.dropdownElement}>
-                    <button className={s.dropdownButton}>Description</button>
+                    <button className={s.dropdownButton}>Statistics</button>
                     <div className={s.dropdownMenu}>
                         <div className={s.dropdownMenuContainer}>
                             <span>
-                                {props.projectData.description}
+                            github stats haha async is shit bro
                             </span>
                         </div>
                         </div>
                 </div>
             </div>                
-            <div className={s.imageGrid}>
-                {/* {images} */}
+            <div>
+                <ImageSlider 
+                images={props.projectData.images}
+                imagesFolder={props.projectData.imagesFolder}
+                />
             </div>
         </div>
     )
