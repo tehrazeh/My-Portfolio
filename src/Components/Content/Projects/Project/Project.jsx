@@ -48,7 +48,7 @@ const Project = (props) => {
                     <div className={s.dropdownMenu}>
                         <div className={s.dropdownMenuContainer}>
                             <span>
-                            github stats haha async is shit bro
+                            github stats
                             </span>
                         </div>
                         </div>

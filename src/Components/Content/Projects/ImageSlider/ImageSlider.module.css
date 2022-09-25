@@ -1,8 +1,10 @@
 .slider {
     min-width: 550px;
-    background-color: blue;
+    border: 5px solid #502f4c;
+    background-color: #c8b8db;
     position: relative;
-    height: 100vh;
+    margin-bottom: 10px;
+    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,18 +19,23 @@
 }
 
 .rightButton {
-    position: absolute;
-    top: 50%;
     right: 32px;
-    z-index: 2;
-    cursor: pointer
 }
 
 .leftButton {
+    left: 32px;
+}
+
+.leftButton, .rightButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
     position: absolute;
     top: 50%;
-    left: 32px;
-    z-index: 2;
+    border-radius: 50%;
+    z-index: 5;
     cursor: pointer
 }
 
@@ -41,4 +48,14 @@
 .slide {
     opacity: 0;
     transition: 1s ease;
+}
+
+.buttonImage {
+    width: 30px;
+    height: 30px;
+}
+
+
+.buttonImage:hover {
+    filter:brightness(1.2)
 }

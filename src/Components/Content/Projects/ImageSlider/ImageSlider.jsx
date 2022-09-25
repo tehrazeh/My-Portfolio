@@ -1,11 +1,13 @@
-import {useState} from 'react';
-import s from './ImageSlider.module.css'
+import { useState } from 'react';
+import s from './ImageSlider.module.css';
+import leftArrow from './sliderImages/leftArrow.png';
+import rightArrow from './sliderImages/rightArrow.png';
 const ImageSlider = (props) => {
 
     const [current, setCurrent] = useState(0)
     const length = props.images.length
 
-    if(!Array.isArray(props.images) || length <=0) {
+    if (!Array.isArray(props.images) || length <= 0) {
         return null;
     }
 
@@ -19,14 +21,21 @@ const ImageSlider = (props) => {
 
     return (
         <section className={s.slider}>
-            <button className={s.leftButton} onClick={previousSlide}>previous</button>
-            <button className={s.rightButton} onClick={nextSlide}>next</button>
+
+            <button className={s.leftButton} onClick={previousSlide}>
+                <img className={s.buttonImage} src={leftArrow} alt='prev'></img>
+            </button>
+            <button className={s.rightButton} onClick={nextSlide}>
+                <img className={s.buttonImage} src={rightArrow} alt='next'></img>
+            </button>
+
+
             {props.images.map((image, index) => {
                 return (
                     <div className={index === current ? s.activeSlide : s.slide} key={index}>
-                        {index === current && (<img className={s.screenshot} src={require(`../${props.imagesFolder}/${image}.png`)} 
-                        alt='project screenshot' key={image}/>)}                       
-                    </div>                   
+                        {index === current && (<img className={s.screenshot} src={require(`../${props.imagesFolder}/${image}.png`)}
+                            alt='project screenshot' key={image} />)}
+                    </div>
                 )
             })}
         </section>
