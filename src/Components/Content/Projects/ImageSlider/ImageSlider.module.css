@@ -19,11 +19,11 @@
 }
 
 .rightButton {
-    right: 32px;
+    right: 10px;
 }
 
 .leftButton {
-    left: 32px;
+    left: 10px;
 }
 
 .leftButton, .rightButton {
@@ -33,10 +33,11 @@
     width: 30px;
     height: 30px;
     position: absolute;
-    top: 50%;
+    top: 90%;
     border-radius: 50%;
     z-index: 5;
-    cursor: pointer
+    cursor: pointer;
+    opacity: 60%
 }
 
 .activeSlide {
