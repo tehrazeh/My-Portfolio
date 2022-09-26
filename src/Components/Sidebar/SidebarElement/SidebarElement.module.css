@@ -26,6 +26,7 @@
     letter-spacing: 2px;
     margin: auto;
     transition: opacity 0.25s;
+    font-size: 1.4em;
 }
 
 .buttonDiscription:hover {

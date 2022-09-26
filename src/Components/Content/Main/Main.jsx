@@ -3,10 +3,10 @@ import s from './Main.module.css';
 function Main() {
   return (
     <div className={s.Main}>
-      <p>Seeking Junior Front End Developer position.</p>
+      <p>Junior Front End Developer.</p>
       <p>
-        My hobbies are Coding, Video Editing, Computers and Technologies in general,
-        Basketball and Computer Games.
+        My hobbies are Coding, Filmmaking and Editing, Computers and Technologies in general,
+        Basketball, and Video Games.
       </p>
       <div className={s.MainContainer}>
         <div className={s.MainSkills}>

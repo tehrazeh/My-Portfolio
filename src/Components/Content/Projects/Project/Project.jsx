@@ -10,7 +10,7 @@ const Project = (props) => {
     const skills = props.projectData.skills.map(skill => {
         return (
             <div className={s.dropdownMenuContainer} key={skill}>
-                <img className={s.skillsPic} src={require(`../Images/${skill.toLowerCase()}.png`)}
+                <img className={s.skillsPic} src={require(`../SkillsImages/${skill.toLowerCase()}.png`)}
                     alt='skill pic' />
                 <h3>{skill}</h3>
             </div>
@@ -79,7 +79,7 @@ const Project = (props) => {
             <div>
                 <ImageSlider
                     images={props.projectData.images}
-                    imagesFolder={props.projectData.imagesFolder}
+                    imagesFolder={`ProjectsImages/${props.projectData.repository}-images`}
                 />
             </div>
         </div>
