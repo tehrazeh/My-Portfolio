@@ -16,7 +16,18 @@ class Projects extends React.Component {
                 `The app allows you to check stat averages of an NBA player for a specific season
                 It will show his picture, team, name, anthropometry and, of course, stats.
                 The custom badge system will reward player a badge if his average of specific stat
+                satisfies the minimum value.`},
+                {id: 2, title: 'Pokemon Team Builder',
+                skills: ['TypeScript' , 'HTML', 'CSS', 'Angular', 'GIT'],
+                imagesFolder: 'pokemon-team-builder-images',
+                images: ['1', '2', '3', '4', '5'],
+                repository: 'pokemon-team-builder',
+                description: 
+                `The app allows you to check stat averages of an NBA player for a specific season
+                It will show his picture, team, name, anthropometry and, of course, stats.
+                The custom badge system will reward player a badge if his average of specific stat
                 satisfies the minimum value.`}
+
             ]
         }
     }
