@@ -1,6 +1,8 @@
 import s from './Project.module.css';
 import gitHubImage from '../../../Sidebar/Images/github.png';
 import ImageSlider from '../ImageSlider/ImageSlider';
+import { getProjectInfo } from '../../../../Api/api';
+import { useState, useEffect } from 'react';
 
 
 const Project = (props) => {
@@ -15,6 +17,16 @@ const Project = (props) => {
         )
     })
 
+    const [repoStats, setRepoStats] = useState([])
+
+    useEffect(() => {
+        async function fetchData() {
+            const request = await getProjectInfo(props.projectData.repository)
+            setRepoStats(request)
+            return request
+        }
+        fetchData()
+    }, [props.projectData.repository])
 
     return (
         <div className={s.projectContainer}>
@@ -32,7 +44,7 @@ const Project = (props) => {
                     <div className={s.dropdownMenu}>
                         {skills}
                     </div>
-                </div>    
+                </div>
                 <div className={s.dropdownElement}>
                     <button className={s.dropdownButton}>Description</button>
                     <div className={s.dropdownMenu}>
@@ -41,23 +53,33 @@ const Project = (props) => {
                                 {props.projectData.description}
                             </span>
                         </div>
-                        </div>
-                </div>            
+                    </div>
+                </div>
                 <div className={s.dropdownElement}>
                     <button className={s.dropdownButton}>Statistics</button>
                     <div className={s.dropdownMenu}>
                         <div className={s.dropdownMenuContainer}>
-                            <span>
-                            github stats
-                            </span>
+                            <p>
+                                Date Created: {repoStats.dateCreated}
+                            </p>
                         </div>
+                        <div className={s.dropdownMenuContainer}>
+                            <p>
+                                Total Commits: {repoStats.totalCommits}
+                            </p>
                         </div>
+                        <div className={s.dropdownMenuContainer}>
+                            <p>
+                                Last Update: {repoStats.lastChange}
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>                
+            </div>
             <div>
-                <ImageSlider 
-                images={props.projectData.images}
-                imagesFolder={props.projectData.imagesFolder}
+                <ImageSlider
+                    images={props.projectData.images}
+                    imagesFolder={props.projectData.imagesFolder}
                 />
             </div>
         </div>

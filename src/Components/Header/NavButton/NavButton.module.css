@@ -1,8 +1,8 @@
 
 .navBarButton {
     position: relative;
-    border: 3.5px solid #22223b;
-    background-color: #4a4e69;
+    border: 2.5px solid #22223b;
+    background-color: #42465d;
     width: 120px;
     cursor: pointer;
 }
@@ -10,6 +10,7 @@
 .navBarImage {
     width: 50px;
 }
+
 
 .navBarButtonDescription {
     position: absolute;
@@ -22,9 +23,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
+    letter-spacing: 2px;
     opacity: 0;
-    margin: auto;
+    margin: 0 auto;
     transition: opacity 0.25s;
 }
 

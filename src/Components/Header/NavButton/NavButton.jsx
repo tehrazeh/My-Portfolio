@@ -8,7 +8,7 @@ const NavButton = (props) => {
             <button className={s.navBarButton}>
                 <img className={s.navBarImage} alt='navbar pic'
                 src={require(`../Images/${props.navButton.label.toLowerCase()}.png`)} />
-                <h3 className={s.navBarButtonDescription}>{props.navButton.label}</h3>
+                <p className={s.navBarButtonDescription}>{props.navButton.label}</p>
             </button>
             </NavLink>
         

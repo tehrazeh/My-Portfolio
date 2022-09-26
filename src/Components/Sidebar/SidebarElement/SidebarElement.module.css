@@ -4,12 +4,12 @@
 
 .sideBarButton {
     position: relative;
+    border: 3px solid #001e2f;
     border-radius: 4px;
     background-color: #003554;
     cursor: pointer;
-    margin: 10px;
+    margin: 10px 5px;
 }
-
 
 .buttonDiscription {
     position: absolute;
@@ -22,10 +22,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: bold;
     opacity: 0;
+    letter-spacing: 2px;
     margin: auto;
-    padding: 0;
     transition: opacity 0.25s;
 }
 

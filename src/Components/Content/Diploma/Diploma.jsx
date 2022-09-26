@@ -8,7 +8,7 @@ const Diploma = (props) => {
                     <h3>Graduated: April, 2022</h3>
                 </div>
                 <div>
-                    <h3>GPA:3.87/4 (Honors)</h3>
+                    <h3>GPA: 3.87/4 (Honors)</h3>
                 </div>
                 
             </div>
