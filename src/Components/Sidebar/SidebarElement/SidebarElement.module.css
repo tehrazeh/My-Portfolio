@@ -4,6 +4,8 @@
 
 .sideBarButton {
     position: relative;
+    display: flex;
+    align-items: center;
     border: 3px solid #001e2f;
     border-radius: 4px;
     background-color: #003554;
@@ -31,4 +33,26 @@
 
 .buttonDiscription:hover {
     opacity: 1
+}
+
+@media screen and (max-width: 1200px) {
+    .sideBarImage {
+        width: 100px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .sideBarImage {
+        width: 50px;
+    }
+
+    .sideBarButton {
+        margin: 3px;
+    }
+
+    .buttonDiscription {
+        letter-spacing: 1px;
+        font-size: 1em;
+    }
+
 }

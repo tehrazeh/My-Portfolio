@@ -25,13 +25,15 @@ transform: scale(1.05)
 
 
 @media screen and (max-width: 800px) {
-    .headerNav {
-        flex-direction: column;
-    }
 
     .homeButtonBox {
         display: flex;
         align-items: center;
+    }
+
+    .homeButton {
+        width: 50px;
+        margin: 5px;
     }
 
 }

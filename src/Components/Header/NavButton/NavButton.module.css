@@ -1,14 +1,19 @@
 
 .navBarButton {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 2.5px solid #22223b;
     background-color: #42465d;
     width: 120px;
     cursor: pointer;
+
 }
 
 .navBarImage {
     width: 50px;
+    margin: 3px;
 }
 
 
@@ -37,5 +42,19 @@
 @media screen and (max-width: 800px) {
     .navBarButton {
         margin: 3px;
+    }
+
+    .navBarButton {
+        width: 60px;
+    }
+
+    .navBarImage {
+        width: 40px;
+        margin: 1.5px;
+    }
+    
+    .navBarButtonDescription {
+        letter-spacing: 1px;
+        font-size: 0.95em;
     }
 }
