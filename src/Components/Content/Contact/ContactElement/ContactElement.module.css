@@ -1,11 +1,11 @@
 .contactImage {
     width: 50px;
     height: 50px;
-    margin: 5px 30px;
+    margin: 5px 10px;
 }
 
 .contactContainer {
-    width: 450px;
+    width: 400px;
     margin: 10px;
     border: 3.5px solid #22223b;
     background-color: #4a4e69;

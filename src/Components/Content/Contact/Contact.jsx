@@ -22,8 +22,9 @@ class Contact extends React.Component {
             <div className={s.Contact}>
                 <div className={s.ContactBlocks}>{contactBlocks}</div>
                 <div className={s.ContactInfo}>
-                    <h3>I have a legal permit to work in Canada</h3>
-                    <h3>I am willing to relocate Canada-wide if required</h3>
+                    <h3>I have a legal permit to work in Canada.</h3>
+                    <h3>I am willing to relocate Canada-wide if required.</h3>
+                    <h3>I can work both remotely and visit an office daily.</h3>
                 </div>
             </div>
         )

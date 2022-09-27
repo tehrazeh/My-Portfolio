@@ -1,21 +1,28 @@
 .Contact {
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     color: rgb(253, 236, 216)
-
 }
 
 .ContactBlocks {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 
 .ContactInfo {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    margin: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .Contact {
+        flex-direction: column;
+    }
 }
