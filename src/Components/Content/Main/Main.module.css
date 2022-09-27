@@ -4,22 +4,22 @@
     grid-area: main;
     text-align: center;
     color: #f5ebe0;
+    width: 100%;
 }
 
 .MainContainer {
     display: flex;
     justify-content: center;
-    margin: 40px;
+    margin: 20px;
 }
 
 .MainSkills {
-    min-width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border: 4px #946c74 solid;
     background-color: #c28486;
-    margin: 20px;
+    margin: 10px;
     padding: 2px 20px;
 }
 
@@ -27,8 +27,20 @@ h3 {
     font-weight: normal;
 }
 
+p {
+    font-size: 1.2em;
+}
+
 li {
     text-align: left;
     padding: 4px;
     word-spacing: 2px;
+}
+
+@media screen and (max-width: 800px) {
+
+    .MainContainer {
+        flex-direction: column;
+    }
+
 }

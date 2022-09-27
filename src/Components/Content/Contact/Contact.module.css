@@ -3,7 +3,8 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    color: rgb(253, 236, 216)
+    color: rgb(253, 236, 216);
+    text-align: center;
 }
 
 .ContactBlocks {
@@ -19,6 +20,7 @@
     justify-content: flex-start;
     align-items: center;
     margin: 20px;
+    text-align: center;
 }
 
 @media screen and (max-width: 800px) {
