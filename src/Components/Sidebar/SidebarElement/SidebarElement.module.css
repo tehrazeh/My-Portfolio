@@ -1,5 +1,5 @@
 .sideBarImage {
-    width: 140px;
+    width: 100px;
 }
 
 .sideBarButton {
@@ -37,7 +37,7 @@
 
 @media screen and (max-width: 1200px) {
     .sideBarImage {
-        width: 100px;
+        width: 80px;
     }
 }
 

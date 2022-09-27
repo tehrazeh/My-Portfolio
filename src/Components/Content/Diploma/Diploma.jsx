@@ -5,15 +5,16 @@ const Diploma = (props) => {
         <div className={s.diplomaContainer}>
             <div className={s.diplomaBlock}>
                 <div>
-                    <h3>Graduated: April, 2022</h3>
+                    <p>Graduated: April, 2022</p>
                 </div>
                 <div>
-                    <h3>GPA: 3.87/4 (Honors)</h3>
-                </div>
-                
+                    <p>GPA: 3.87/4 (Honors)</p>
+                </div>                
             </div>
-
-            <img className={s.diplomaImage} alt='diploma' src={diplomaImage}/>
+            <div className={s.diplomaImageContainer}>
+                <img className={s.diplomaImage} alt='diploma' src={diplomaImage}/>
+            </div>
+            
         </div>
     )
 }

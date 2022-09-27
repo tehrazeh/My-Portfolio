@@ -6,19 +6,26 @@
     color: rgb(253, 236, 216);
 }
 
-
-.diplomaImage {
-    width: 90%;
-    border: 5px rgb(89, 176, 253) solid;
-    margin-bottom: 15px;
+.diplomaImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0 20px;
+    max-width: 1200px;
 }
 
+.diplomaImage {
+    width: 100%;
+    margin-bottom: 15px;
+    object-fit: scale-down;
+}
 .diplomaBlock {
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 10px;
+    align-items: flex-start;
+    margin: 20px 0;
 }
 
 .diplomaBlock > div {
@@ -26,8 +33,21 @@
     padding: 10px;
     background-color: #720026;
     border: 3px solid #4f000b;
+    font-size: 1.2em;
 }
 
 .diplomaBlock > div:hover {
     filter:brightness(1.2);
+}
+
+@media screen and (max-width: 800px) {
+    .diplomaBlock > div {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    .diplomaImage {
+        padding-bottom: 64%;
+    }
 }
