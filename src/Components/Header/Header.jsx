@@ -24,9 +24,12 @@ class Header extends React.Component {
     return (
       <>
         <div className={s.headerHome}>
-          <NavLink to='/'>
+          <div className={s.homeButtonBox}>
+          <NavLink  to='/'>
           <img className={s.homeButton} alt='home button' src={homeBtn} />
           </NavLink>
+          </div>
+          
         </div>
         <div className={s.headerNav}>
           {navButtons}

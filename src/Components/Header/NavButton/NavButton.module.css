@@ -33,3 +33,9 @@
 .navBarButtonDescription:hover {
     opacity: 1
 }
+
+@media screen and (max-width: 800px) {
+    .navBarButton {
+        margin: 3px;
+    }
+}
