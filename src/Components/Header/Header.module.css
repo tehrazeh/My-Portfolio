@@ -24,6 +24,66 @@ transform: scale(1.05)
 }
 
 
+/* THIS IS BUTTON SECTION */ 
+.navBarButton, .navBarButtonActive {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    cursor: pointer;
+}
+
+.navBarButtonActive {
+    border: 4px solid #484896;
+    background-color: #838ab0;
+    border-radius: 10px;
+}
+
+.navBarButton {
+    border: 4px solid #22223b;
+    background-color: #42465d;
+    border-radius: 10px;
+}
+
+.navBarImage {
+    width: 50px;
+    margin: 3px;
+}
+
+.active {
+    background-color: green ;
+}
+
+.inactive {
+    background-color: red;
+}
+
+
+.navBarButtonDescription {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2px;
+    opacity: 0;
+    margin: 0 auto;
+    transition: opacity 0.25s;
+    font-size: 1.2em;
+}
+
+.navBarButtonDescription:hover {
+    opacity: 1
+}
+
+
 @media screen and (max-width: 800px) {
 
     .homeButtonBox {
@@ -36,4 +96,19 @@ transform: scale(1.05)
         margin: 2.5px;
     }
 
+    .navBarButton, .navBarButtonActive {
+        margin: 3px;
+        width: 60px;
+    }
+
+
+    .navBarImage {
+        width: 40px;
+        margin: 1.5px;
+    }
+    
+    .navBarButtonDescription {
+        letter-spacing: 1px;
+        font-size: 0.95em;
+    }
 }
