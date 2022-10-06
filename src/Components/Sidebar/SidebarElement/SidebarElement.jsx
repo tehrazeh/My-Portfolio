@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import s from './SidebarElement.module.css';
-import { toggleActiveButtonAC } from "../../../Redux/header-reducer"
+import { toggleActiveButton } from "../../../Redux/header-reducer"
 import {connect} from 'react-redux'
 const SidebarElement = (props) => {
 
@@ -26,12 +26,12 @@ const SidebarElement = (props) => {
 }
 
 // this block is only needed to stop highlighting the active header button if sidebar button was clicked
-const mapDispatchToProps = (dispatch) => {
-    return {
-        toggleActiveButton: (buttonId) => {
-            dispatch(toggleActiveButtonAC(buttonId))
-        }
-    }
-}
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         toggleActiveButton: (buttonId) => {
+//             dispatch(toggleActiveButton(buttonId))
+//         }
+//     }
+// }
 
-export default connect(null, mapDispatchToProps)(SidebarElement)
+export default connect(null, {toggleActiveButton})(SidebarElement)
