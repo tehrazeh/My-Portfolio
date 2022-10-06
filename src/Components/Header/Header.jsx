@@ -11,9 +11,9 @@ const Header = (props) => {
     return ({
       activeButton: null,
       buttons: [
-        { id: 1, label: 'Projects' },
-        { id: 2, label: 'Resume' },
-        { id: 3, label: 'Contact' },
+        { id: 0, label: 'Projects' },
+        { id: 1, label: 'Resume' },
+        { id: 2, label: 'Contact' },
       ]
     })
 
@@ -26,7 +26,7 @@ const Header = (props) => {
   }
 
   function toggleActiveStyle(index) {
-    return ((appState.buttons[index] === appState.activeButton ) ? 'navBarButtonActive' : 'navBarButton')
+    return ((appState.buttons[index].id === props.activeButton ) ? 'navBarButtonActive' : 'navBarButton')
   }
 
   const navButtons = appState.buttons.map((element, index) => {
