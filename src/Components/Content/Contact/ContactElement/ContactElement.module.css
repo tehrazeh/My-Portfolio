@@ -15,7 +15,9 @@
 
 @media screen and (max-width: 800px) {
     .contactContainer {
-        width: 380px;
+        width: 80%;
+        min-width: 380px;
+        justify-content: center;
         margin: 2px;
     }
 }
