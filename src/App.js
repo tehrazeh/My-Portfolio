@@ -1,5 +1,5 @@
 import './App.css';
-import Header from './Components/Header/Header';
+import HeaderContainer from './Components/Header/HeaderContainer';
 import Footer from './Components/Footer/Footer';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Main from './Components/Content/Main/Main';
@@ -11,7 +11,7 @@ import { Route, Routes } from 'react-router-dom';
 function App(props) {
   return (
     <div className="App">
-      <Header />
+      <HeaderContainer />
       <Sidebar />
       <div className="content">
         <Routes>

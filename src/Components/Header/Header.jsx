@@ -2,10 +2,10 @@ import s from './Header.module.css';
 import React from 'react'
 import homeBtn from './Images/home.png'
 import { NavLink } from 'react-router-dom'
-import { useState, useSearchParams } from 'react';
+import { useState } from 'react';
 
 
-const Header = () => {
+const Header = (props) => {
 
   const [appState, changeState] = useState(() => {
     return ({
@@ -21,6 +21,7 @@ const Header = () => {
 
   function toggleActive(index) {
     changeState({ ...appState, activeButton: appState.buttons[index] })
+    props.toggleActiveButton(index)
 
   }
 
