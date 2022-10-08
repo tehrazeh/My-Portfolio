@@ -43,7 +43,7 @@ const Project = (props) => {
     return (
         <div className={s.projectContainer}>
             <div className={s.projectTitle}>
-                <h2>{props.projectData.title}</h2>
+                <p>{props.projectData.title}</p>
                 <a href={`https://github.com/tehrazeh/${props.projectData.repository}`}>
                     <button className={s.gitHubButton} >
                         <img className={s.gitHubImage} src={gitHubImage} alt='github' />
