@@ -13,7 +13,7 @@ class Projects extends React.Component {
                 repository: 'stats-dont-lie',
                 // isDisplayed: true,
                 description: 
-                `The app allows you to check stat averages of an NBA player for a specific season
+                `The app allows you to check stat averages of an NBA player for a specific season.
                 It will show his picture, team, name, anthropometry and, of course, stats.
                 The custom badge system will reward player a badge if his average of specific stat
                 satisfies the minimum value.`},

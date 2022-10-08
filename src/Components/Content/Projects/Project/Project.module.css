@@ -65,19 +65,28 @@
 
 .dropdownMenuContainer {
     background-color: #6b6fb2;
-    width: 300px;
+    min-width: 350px;
     display: flex;
-    gap: 100px;
-    padding: 0 20px;
-    justify-content: flex-start;
+    padding: 0, 10px;
+    justify-content: center;
     align-items: center;
-    margin: 2px;
+    margin: 4px;
     border-radius: 2px;
-    color: rgb(219, 227, 234);    
+    color: rgb(219, 227, 234);
+    line-height: 2.5em;
+   
 }
 
+.dropdownSkills {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
 .skillsPic {
-    width: 40px;
+    width: 50px;
+    margin-right: 100px;
+    margin-left: 25px;
 }
 
 span {

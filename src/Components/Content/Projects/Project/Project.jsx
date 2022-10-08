@@ -10,20 +10,32 @@ const Project = (props) => {
     const skills = props.projectData.skills.map(skill => {
         return (
             <div className={s.dropdownMenuContainer} key={skill}>
-                <img className={s.skillsPic} src={require(`../SkillsImages/${skill.toLowerCase()}.png`)}
-                    alt='skill pic' />
-                <h3>{skill}</h3>
+                <div className={s.dropdownSkills}>
+                    <img className={s.skillsPic} src={require(`../SkillsImages/${skill.toLowerCase()}.png`)}
+                        alt='skill pic' />
+                    <h3>{skill}</h3>
+                </div>
+                
             </div>
         )
     })
 
-    const [repoStats, setRepoStats] = useState([])
+    const [repoStats, setRepoStats] = useState({})
 
     useEffect(() => {
         async function fetchData() {
-            const request = await getProjectInfo(props.projectData.repository)
-            setRepoStats(request)
-            return request
+            try {
+                const request = await getProjectInfo(props.projectData.repository)
+                setRepoStats(request)
+                return request
+            } catch (e) {
+                setRepoStats({
+                    dateCreated: '3 hours before the Big Bang',
+                    totalCommits: '∞ + 23',
+                    lastChange: 'the day after tomorrow'
+                })
+            }
+
         }
         fetchData()
     }, [props.projectData.repository])
@@ -49,9 +61,9 @@ const Project = (props) => {
                     <button className={s.dropdownButton}>Description</button>
                     <div className={s.dropdownMenu}>
                         <div className={s.dropdownMenuContainer}>
-                            <span>
+                            <p>
                                 {props.projectData.description}
-                            </span>
+                            </p>
                         </div>
                     </div>
                 </div>
