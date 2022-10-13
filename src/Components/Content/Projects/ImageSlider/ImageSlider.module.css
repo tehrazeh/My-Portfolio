@@ -18,21 +18,21 @@
 }
 
 .rightButton {
-    right: 10px;
+    right: 8px;
 }
 
 .leftButton {
-    left: 10px;
+    left: 8px;
 }
 
 .leftButton, .rightButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     position: absolute;
-    top: 90%;
+    top: 93%;
     border-radius: 50%;
     z-index: 5;
     cursor: pointer;
@@ -51,8 +51,8 @@
 }
 
 .buttonImage {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
 }
 
 
@@ -64,12 +64,14 @@
 
     .slider {
         min-width: 400px;
+        border: 2px solid #502f4c;
         
     }
     
     .screenshot {
         max-width: 300px;
     }
+
 
 }
 
@@ -95,6 +97,14 @@
         height: 22px;
     }
 
+    .rightButton {
+        right: 4px;
+    }
+    
+    .leftButton {
+        left: 4px;
+    }
+
 }
 
 @media screen and (max-height: 400px) {
@@ -116,6 +126,14 @@
     .buttonImage {
         width: 22px;
         height: 22px;
+    }
+
+    .rightButton {
+        right: 4px;
+    }
+    
+    .leftButton {
+        left: 4px;
     }
 
 

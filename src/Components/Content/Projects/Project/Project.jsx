@@ -27,7 +27,6 @@ const Project = (props) => {
             try {
                 const request = await getProjectInfo(props.projectData.repository)
                 setRepoStats(request)
-                return request
             } catch (e) {
                 setRepoStats({
                     dateCreated: '3 hours before the Big Bang',
