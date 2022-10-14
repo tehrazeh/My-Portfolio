@@ -23,6 +23,7 @@ const Project = (props) => {
     const [repoStats, setRepoStats] = useState({})
 
     useEffect(() => {
+        const controller = new AbortController()
         async function fetchData() {
             try {
                 const request = await getProjectInfo(props.projectData.repository)
@@ -33,6 +34,10 @@ const Project = (props) => {
                     totalCommits: '∞ + 23',
                     lastChange: 'the day after tomorrow'
                 })
+            }
+
+            return () => {
+                controller.abort()
             }
 
         }
