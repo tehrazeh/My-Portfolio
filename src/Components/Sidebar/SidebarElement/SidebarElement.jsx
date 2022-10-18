@@ -25,13 +25,4 @@ const SidebarElement = (props) => {
     )
 }
 
-// this block is only needed to stop highlighting the active header button if sidebar button was clicked
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         toggleActiveButton: (buttonId) => {
-//             dispatch(toggleActiveButton(buttonId))
-//         }
-//     }
-// }
-
 export default connect(null, {toggleActiveButton})(SidebarElement)

@@ -7,7 +7,6 @@ import { useState, useEffect } from 'react';
 
 const Project = (props) => {
 
-    // const projectRef = useRef('')
     const [projectVisibility, setProjectVisibility] = useState(() => {
         return {
             body: 'hidden',

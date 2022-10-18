@@ -11,7 +11,6 @@ class Projects extends React.Component {
                 skills: ['JavaScript' , 'HTML', 'CSS', 'GIT', 'API'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'stats-dont-lie',
-                // isDisplayed: true,
                 description: 
                 `The app allows you to check stat averages of an NBA player for a specific season.
                 It will show his picture, team, name, anthropometry and, of course, stats.
@@ -22,7 +21,6 @@ class Projects extends React.Component {
                 skills: ['TypeScript' , 'HTML', 'CSS', 'Angular', 'GIT'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'pokemon-team-builder',
-                // isDisplayed: false,
                 description: 
                 `You can build a team of pokemons. There is a pool of nine pokemons to choose from
                 Each pokemon has different elemental type and attack. Once you click on a pokemon,
@@ -33,28 +31,12 @@ class Projects extends React.Component {
         }
     }
 
-    // displayProject = () => {
-    //     console.log('hello')
-    // }
 
     render () {
         const projectComponents = this.state.projects.map(project => {
             return <Project key={project.id} projectData={project} />
-        })
-    
-        // const projectList = this.state.projects.map(project => {
-        //     return (
-        //     <div onClick={this.displayProject()}>
-        //         {project.isDisplayed && (<div key={project.id}>{project.title}</div>)}
-        //     </div>)
-        // })
-        
-        return ( 
-            <> 
-                {/* <div>{projectList}</div> */}
-                <div>{projectComponents}</div>
-            </> 
-        )
+        })       
+        return <div>{projectComponents}</div>
     }
 }
 
