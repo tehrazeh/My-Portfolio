@@ -1,5 +1,5 @@
 .projectContainer {
-    margin: 10px;
+    margin: 10px 10px 300px 10px;
     padding: 0 100px;
     background-color: #858ae3;
     border: 4px #613dc1 solid;
@@ -118,6 +118,8 @@ span {
 @media screen and (max-width: 900px) {
     .projectContainer {
         padding: 0 20px;
+        margin: 10px 10px 170px 10px;
+
     }
 
     .dropdownMenu {
@@ -160,6 +162,7 @@ span {
 }
 
 @media screen and (max-width: 600px) {
+    
     .dropdownMenuContainer {
         font-size: 0.7em;   
     }

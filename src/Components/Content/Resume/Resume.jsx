@@ -11,7 +11,7 @@ const Resume = (props) => {
                 <ul>
                     <li>2 years of Front-End Development. JavaScript, HTML, CSS</li>
                     <li>React, TypeScript, Redux, Git</li>
-                    <li>Knowledgeable in: Node JS, MySQL, Linux, Java</li>
+                    <li>Knowledgeable in: Node.js, MySQL, Linux, Java</li>
                     <li>During studies continuously used: SOLID, OOP, Agile</li>
                     <li>3 years of experience working and team. Ability to communicate with
                         clients and colleagues in a respected manner.
