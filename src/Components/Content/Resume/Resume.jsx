@@ -6,15 +6,14 @@ const Resume = (props) => {
                 <h3>Professional Summary</h3>
                 <p>
                     Sheridan graduate, Front-End developer. Love to code my ideas into reality.
-                    Enjoy solving coding problems and strengthen my skills through practice.
+                    Enjoy strengthening my skills through practice.
                 </p>
                 <ul>
                     <li>2 years of Front-End Development. JavaScript, HTML, CSS</li>
                     <li>React, TypeScript, Redux, Git</li>
-                    <li>Knowledgeable in: Node.js, MySQL, Linux, Java</li>
+                    <li>Knowledgeable in: Node.js, MySQL, Linux, Java, Angular</li>
                     <li>During studies continuously used: SOLID, OOP, Agile</li>
-                    <li>3 years of experience working and team. Ability to communicate with
-                        clients and colleagues in a respected manner.
+                    <li>Experience working with team and clients.
                     </li>
                 </ul>
             </div>

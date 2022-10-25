@@ -60,6 +60,7 @@ const Project = (props) => {
         }
     }
 
+
     return (
         <div className={s.projectContainer} >
             <div className={s.projectTitle}>
