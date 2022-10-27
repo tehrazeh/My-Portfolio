@@ -1,0 +1,14 @@
+.ProjectsContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 1500px) {
+    .ProjectsContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

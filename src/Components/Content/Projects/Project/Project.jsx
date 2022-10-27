@@ -1,28 +1,16 @@
 import s from './Project.module.css';
 import gitHubImage from '../../../Sidebar/Images/github.png';
-import ImageSlider from '../ImageSlider/ImageSlider';
 import { getProjectInfo } from '../../../../Api/api';
 import { useState, useEffect } from 'react';
+import { Link} from 'react-router-dom';
 
 
 const Project = (props) => {
-    const [projectVisibility, setProjectVisibility] = useState(() => {
-        return {
-            body: 'hidden',
-            toggleImage: 'show'
-        }
-    })
 
     const skills = props.projectData.skills.map(skill => {
         return (
-            <div className={s.dropdownMenuContainer} key={skill} >
-                <div className={s.dropdownSkills}>
-                    <img className={s.skillsPic} src={require(`../SkillsImages/${skill.toLowerCase()}.png`)}
-                        alt='skill pic' />
-                    <h3>{skill}</h3>
-                </div>
-
-            </div>
+            <img className={s.skillsPic} src={require(`../SkillsImages/${skill.toLowerCase()}.png`)}
+                alt='skill pic' key={skill} />
         )
     })
 
@@ -50,37 +38,36 @@ const Project = (props) => {
         fetchData()
     }, [props.projectData.repository])
 
-
-
-    const toggleDisplayProjectBody = () => {
-        if (projectVisibility.body === 'hidden') {
-            setProjectVisibility(prev => ({ body: 'visible', toggleImage: 'hide' }))
-        } else {
-            setProjectVisibility(prev => ({ body: 'hidden', toggleImage: 'show' }))
-        }
-    }
-
-
     return (
         <div className={s.projectContainer} >
             <div className={s.projectTitle}>
                 <p>{props.projectData.title}</p>
                 <a href={`https://github.com/tehrazeh/${props.projectData.repository}`}>
-                    <button className={s.gitHubButton} >
-                        <img className={s.gitHubImage} src={gitHubImage} alt='github' />
+                    <button className={s.titleButton} >
+                        <img className={s.titleButtonImage} src={gitHubImage} alt='github' />
                     </button>
                 </a>
-                <button className={s.gitHubButton} onClick={toggleDisplayProjectBody}>
-                    <img className={s.gitHubImage} src={require(`../ProjectsImages/assets/${projectVisibility.toggleImage}.png`)} alt='visibility' />
-                </button>
+                <Link to={`/projects/${props.projectData.id}/screenshots`}
+                    state={{
+                        images: props.projectData.images,
+                        imagesFolder: `ProjectsImages/${props.projectData.repository}-images`
+                    }}>
+                    <button className={s.titleButton} >
+                        <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/screenshots.png`)} alt='visibility' />
+                    </button>
+                </Link>
+                <Link to='*'>
+                    <button className={s.titleButton} >
+                        <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/website.png`)} alt='visibility' />
+                    </button>
+                </Link>
             </div>
+            <div className={s.skills}>
+                Skills: {skills}
+            </div>
+            <img className={s.projectPreview} src={require(`../ProjectsImages/${props.projectData.repository}-images/preview.png`)}
+                alt='skill pic' />
             <div className={s.dropdownContainer}>
-                <div className={s.dropdownElement}>
-                    <button className={s.dropdownButton}>Skills</button>
-                    <div className={s.dropdownMenu}>
-                        {skills}
-                    </div>
-                </div>
                 <div className={s.dropdownElement}>
                     <button className={s.dropdownButton}>Description</button>
                     <div className={s.dropdownMenu}>
@@ -112,14 +99,6 @@ const Project = (props) => {
                     </div>
                 </div>
             </div>
-            {projectVisibility.body === 'visible' &&
-                <div>
-                    <ImageSlider
-                        images={props.projectData.images}
-                        imagesFolder={`ProjectsImages/${props.projectData.repository}-images`}
-                    />
-                </div>
-            }
         </div>
     )
 }

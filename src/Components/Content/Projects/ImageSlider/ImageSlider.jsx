@@ -2,12 +2,17 @@ import { useState } from 'react';
 import s from './ImageSlider.module.css';
 import leftArrow from './sliderImages/leftArrow.png';
 import rightArrow from './sliderImages/rightArrow.png';
-const ImageSlider = (props) => {
+import { useLocation } from 'react-router-dom'
+const ImageSlider = () => {
 
+    const props = useLocation()
+
+    const images = props.state.images
+    const imagesFolder = props.state.imagesFolder
     const [current, setCurrent] = useState(0)
-    const length = props.images.length
+    const length = images.length
 
-    if (!Array.isArray(props.images) || length <= 0) {
+    if (!Array.isArray(images) || length <= 0) {
         return null;
     }
 
@@ -30,10 +35,10 @@ const ImageSlider = (props) => {
             </button>
 
 
-            {props.images.map((image, index) => {
+            {images.map((image, index) => {
                 return (
                     <div className={index === current ? s.activeSlide : s.slide} key={index}>
-                        {index === current && (<img className={s.screenshot} src={require(`../${props.imagesFolder}/${image}.png`)}
+                        {index === current && (<img className={s.screenshot} src={require(`../${imagesFolder}/${image}.png`)}
                             alt='project screenshot' key={image} />)}
                     </div>
                 )

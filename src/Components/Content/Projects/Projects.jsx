@@ -1,5 +1,6 @@
 import React from "react";
 import Project from "./Project/Project";
+import s from "./Projects.module.css"
 class Projects extends React.Component {
         
         
@@ -8,7 +9,7 @@ class Projects extends React.Component {
         this.state = {
             projects: [
                 {id: 1, title: 'Stats dont Lie',
-                skills: ['JavaScript' , 'HTML', 'CSS', 'GIT', 'API'],
+                skills: ['JavaScript' , 'API'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'stats-dont-lie',
                 description: 
@@ -18,7 +19,7 @@ class Projects extends React.Component {
                 satisfies the minimum value.`},
                 
                 {id: 2, title: 'Pokemon Team Builder',
-                skills: ['TypeScript' , 'HTML', 'CSS', 'Angular', 'GIT'],
+                skills: ['TypeScript', 'Angular'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'pokemon-team-builder',
                 description: 
@@ -36,7 +37,7 @@ class Projects extends React.Component {
         const projectComponents = this.state.projects.map(project => {
             return <Project key={project.id} projectData={project} />
         })       
-        return <div>{projectComponents}</div>
+        return <div className={s.ProjectsContainer}>{projectComponents}</div>
     }
 }
 

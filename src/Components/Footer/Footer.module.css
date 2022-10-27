@@ -1,7 +1,7 @@
 .Footer {
+    margin: 20px 0;
     text-align: center;
-    color: #f5ebe0;
+    color: #94918f;
     font-size: 1.2em;
     grid-area: footer;
-    background-color: #2f3e46;
 }

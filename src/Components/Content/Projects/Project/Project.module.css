@@ -1,6 +1,6 @@
 .projectContainer {
-    margin: 10px 10px 300px 10px;
-    padding: 0 100px;
+    margin: 10px 10px 200px 10px;
+    width: 45%;
     background-color: #858ae3;
     border: 4px #613dc1 solid;
     text-align: center;
@@ -8,12 +8,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
 .projectTitle {
     font-size: 1.5em;
+    width: 100%;
 }
 
 .dropdownElement {
@@ -22,8 +23,9 @@
 
 .dropdownContainer {
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 
 .projectTitle {
@@ -33,12 +35,18 @@
     gap: 10px;
 }
 
-.gitHubButton {
-    width: 40px;
-    height: 40px;
+.projectPreview {
+    width: 600px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.titleButton {
+    width: 45px;
+    height: 45px;
     background-color: #4e4662;
     border-radius: 50%;
-    padding: 5px;
+    padding: 4px;
     margin: 2px;
     display: flex;
     align-items: center;
@@ -47,12 +55,12 @@
     border: none;
 }
 
-.gitHubButton:hover {
+.titleButton:hover {
     filter: brightness(1.3)
 }
 
-.gitHubImage {
-    width: 30px;
+.titleButtonImage {
+    width: 36px;
 }
 
 .dropdownMenu {
@@ -92,9 +100,16 @@
     align-items: center;
 }
 .skillsPic {
-    width: 50px;
-    margin-right: 100px;
-    margin-left: 25px;
+    width: 30px;
+    border-radius: 5px;
+    margin: 0 10px;
+}
+
+.skills {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 span {
@@ -114,12 +129,21 @@ span {
     letter-spacing: 1px; 
 }
 
+@media screen and (max-width: 1500px) {
+    .projectContainer {
+        width: 85%;
+    }
+
+    .projectPreview {
+        width: 90%
+    }
+}
+
 
 @media screen and (max-width: 900px) {
     .projectContainer {
         padding: 0 20px;
         margin: 10px 10px 170px 10px;
-
     }
 
     .dropdownMenu {
