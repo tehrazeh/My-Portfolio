@@ -1,38 +1,42 @@
 .slider {
-    min-width: 550px;
-    border: 5px solid #502f4c;
+    width:95%;
     background-color: #c8b8db;
     position: relative;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
     height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+    height: 95%;    
 }
 
 .screenshot {
-    max-height: 500px;
-    max-width: 500px;
+    max-height: 750px;
+    width: 80%;
+    height: 80%;
     border-radius: 10px;
     object-fit: scale-down;    
 }
 
 .rightButton {
-    right: 8px;
+    right: 10px;
 }
 
 .leftButton {
-    left: 8px;
+    left: 10px;
 }
 
 .leftButton, .rightButton {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 80px;
+    height: 80px;
     position: absolute;
-    top: 93%;
+    top: 50%;
     border-radius: 50%;
     z-index: 5;
     cursor: pointer;
@@ -40,6 +44,9 @@
 }
 
 .activeSlide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 1;
     transition-duration: 1s;
     transform: scale(1.02);
@@ -51,8 +58,8 @@
 }
 
 .buttonImage {
-    width: 35px;
-    height: 35px;
+    width: 80px;
+    height: 80px;
 }
 
 
@@ -60,22 +67,35 @@
     filter:brightness(1.2)
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1230px) {
+    .buttonImage {
+        width: 50px;
+        height: 50px;
+    }    
+    .leftButton, .rightButton {
 
-    .slider {
-        min-width: 400px;
-        border: 2px solid #502f4c;
-        
+        width: 50px;
+        height: 50px;
     }
-    
-    .screenshot {
-        max-width: 300px;
-    }
-
-
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 660px) {
+
+    .buttonImage {
+        width: 35px;
+        height: 35px;
+    }    
+    .leftButton, .rightButton {
+        opacity: 40%;
+        width: 35px;
+        height: 35px;
+    }
+}
+
+@media screen and (max-width: 660px) {
+ /*sdelay kartinki height i cho to ehse*/
+}
+/* @media screen and (max-width: 600px) {
 
     .slider {
         min-width: 225px;
@@ -150,4 +170,4 @@
         max-height: 300px;
     }
 
-}
+} */

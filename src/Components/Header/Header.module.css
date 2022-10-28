@@ -51,15 +51,6 @@ transform: scale(1.05)
     margin: 3px;
 }
 
-.active {
-    background-color: green ;
-}
-
-.inactive {
-    background-color: red;
-}
-
-
 .navBarButtonDescription {
     position: absolute;
     top: 0;
