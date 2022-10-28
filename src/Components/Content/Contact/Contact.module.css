@@ -1,10 +1,11 @@
 .Contact {
-    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     color: rgb(253, 236, 216);
     text-align: center;
+    height: 100%;
 }
 
 .ContactBlocks {
@@ -25,6 +26,14 @@
 
 @media screen and (max-width: 800px) {
     .Contact {
+        justify-content: flex-start;
+        align-items: center;
         flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .ContactInfo {
+        font-size: 0.8em;
     }
 }

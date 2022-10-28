@@ -15,9 +15,21 @@
 
 @media screen and (max-width: 800px) {
     .contactContainer {
-        width: 80%;
-        min-width: 380px;
+        flex-wrap: wrap;
+        width: 90%;
+        font-size: 0.8em;
         justify-content: center;
         margin: 2px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .contactContainer {
+        flex-wrap: wrap;
+        font-size: 0.6em;
+    }
+    .contactImage {
+        display: none;
     }
 }
