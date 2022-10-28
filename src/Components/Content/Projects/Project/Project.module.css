@@ -82,15 +82,17 @@
 
 .dropdownMenuContainer {
     background-color: #505284;
-    width: 350px;
+    width: 300px;
     display: flex;
     padding: 0, 10px;
     justify-content: center;
     align-items: center;
     margin: 4px;
+    padding: 0 4px;
     border-radius: 2px;
     color: rgb(219, 227, 234);
-    line-height: 1.4em;   
+    line-height: 1.4em;
+    font-size: 0.8em;   
 }
 
 .dropdownSkills {
