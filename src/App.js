@@ -10,6 +10,7 @@ import Resume from './Components/Content/Resume/Resume';
 import { Route, Routes } from 'react-router-dom';
 import ImageSlider from './Components/Content/Projects/ImageSlider/ImageSlider';
 import NotFound from './Components/NotFound/NotFound';
+import NotDeployed from './Components/NotFound/NotDeployed';
 function App(props) {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App(props) {
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/projects/:projectId/screenshots' element={<ImageSlider/>}/>
+          <Route path='/notdeployed' element={<NotDeployed/>}/>
           <Route path='*' element={<NotFound/>}/>
         </Routes>
       </div>

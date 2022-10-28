@@ -56,7 +56,7 @@ const Project = (props) => {
                         <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/screenshots.png`)} alt='visibility' />
                     </button>
                 </Link>
-                <Link to='*'>
+                <Link to='/notdeployed'>
                     <button className={s.titleButton} >
                         <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/website.png`)} alt='visibility' />
                     </button>
