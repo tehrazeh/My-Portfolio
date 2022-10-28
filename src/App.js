@@ -9,6 +9,7 @@ import Projects from './Components/Content/Projects/Projects';
 import Resume from './Components/Content/Resume/Resume';
 import { Route, Routes } from 'react-router-dom';
 import ImageSlider from './Components/Content/Projects/ImageSlider/ImageSlider';
+import NotFound from './Components/NotFound/NotFound';
 function App(props) {
   return (
     <div className="App">
@@ -22,7 +23,7 @@ function App(props) {
           <Route path='/contact' element={<Contact />} />
           <Route path='/resume' element={<Resume />} />
           <Route path='/projects/:projectId/screenshots' element={<ImageSlider/>}/>
-          <Route path='*' element={<h1>not found bro..</h1>}/>
+          <Route path='*' element={<NotFound/>}/>
         </Routes>
       </div>
       <Footer />
