@@ -186,7 +186,8 @@ span {
 @media screen and (max-width: 600px) {
 
     .projectContainer {
-        margin: 10px 10px 150px 10px;
+        margin: 5px 5px 120px 5px;
+        width: 80%;
     }
     
     .dropdownMenu {
@@ -198,8 +199,53 @@ span {
         font-size: 0.6em;   
     }
 
+    .projectTitle, .skills {
+        font-size: 0.8em;
+    }
+
+    .titleButton {
+        width: 25px;
+        height: 25px;
+    }
+
+    .titleButtonImage {
+        width: 20px;
+    }
 
 }
+
+
+@media screen and (max-width: 400px) {
+
+    .projectContainer {
+        margin: 5px 5px 120px 5px;
+        width: 80%;
+        font-size: 14px!important;
+    }
+    
+    .dropdownMenu {
+        width: 145px;
+    }
+    
+    .dropdownMenuContainer {
+        width: 130px;
+    }
+
+    .titleButton {
+        padding: 2px;
+        margin: 1px;
+    }
+
+    .dropdownButton {
+        width: 80px;
+        height: 30px;
+        padding: 5px;
+        margin: 2px;
+    }
+
+
+}
+
 
 
 
