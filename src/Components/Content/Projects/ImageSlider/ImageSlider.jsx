@@ -2,7 +2,8 @@ import { useState } from 'react';
 import s from './ImageSlider.module.css';
 import leftArrow from './sliderImages/leftArrow.png';
 import rightArrow from './sliderImages/rightArrow.png';
-import { useLocation } from 'react-router-dom'
+import back from './sliderImages/back.png'
+import { Link, useLocation } from 'react-router-dom'
 const ImageSlider = () => {
 
     const props = useLocation()
@@ -26,7 +27,12 @@ const ImageSlider = () => {
 
     return (
         <section className={s.slider}>
-
+            <Link to='/projects'>
+                <button className={s.backButton}>
+                    <img className={s.buttonImage} src={back} alt='go back'></img>
+                </button>
+            </Link>
+            
             <button className={s.leftButton} onClick={previousSlide}>
                 <img className={s.buttonImage} src={leftArrow} alt='prev'></img>
             </button>
