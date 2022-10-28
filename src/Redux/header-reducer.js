@@ -13,7 +13,7 @@ const headerReducer = (state = initialState, action) => {
 }
 
 
-export const toggleActiveButton = (buttonId) => ({
+export const toggleActiveHeaderButton = (buttonId) => ({
     type: ACTIVE_BUTTON_TOGGLE,
     buttonId
 })

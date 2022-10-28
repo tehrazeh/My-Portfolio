@@ -1,4 +1,4 @@
-import { toggleActiveButton } from "../../Redux/header-reducer"
+import { toggleActiveHeaderButton } from "../../Redux/header-reducer"
 import {connect} from 'react-redux'
 import Header from './Header'
 
@@ -23,6 +23,6 @@ const mapStateToProps = (state) => {
 //     }
 // }
 
-const HeaderContainer = connect(mapStateToProps, {toggleActiveButton})(Header)
+const HeaderContainer = connect(mapStateToProps, {toggleActiveHeaderButton})(Header)
 
 export default HeaderContainer

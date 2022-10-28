@@ -21,7 +21,7 @@ const Header = (props) => {
 
   function toggleActive(index) {
     changeState({ ...appState, activeButton: appState.buttons[index] })
-    props.toggleActiveButton(index)
+    props.toggleActiveHeaderButton(index)
 
   }
 

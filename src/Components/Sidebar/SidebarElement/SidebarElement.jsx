@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import s from './SidebarElement.module.css';
-import { toggleActiveButton } from "../../../Redux/header-reducer"
+import { toggleActiveHeaderButton } from "../../../Redux/header-reducer"
 import {connect} from 'react-redux'
 const SidebarElement = (props) => {
 
@@ -8,7 +8,7 @@ const SidebarElement = (props) => {
     //do not redirect to other pages and therefore navlink is preferred to maintain SPA style
     let imageButton = 
     <button className={s.sideBarButton} onClick={() => {
-        props.toggleActiveButton(null)
+        props.toggleActiveHeaderButton(null)
     }}>
         <img className={s.sideBarImage} src={require(`../Images/${props.sideButton.label.toLowerCase()}.png`)} 
         alt='sidebar pic'/>
@@ -25,4 +25,4 @@ const SidebarElement = (props) => {
     )
 }
 
-export default connect(null, {toggleActiveButton})(SidebarElement)
+export default connect(null, {toggleActiveHeaderButton})(SidebarElement)
