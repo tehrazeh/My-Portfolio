@@ -4,13 +4,14 @@
     justify-content: center;
     align-items: center;
     color: rgb(253, 236, 216);
+    height: 100%;
 }
 
 .diplomaImageContainer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 20px;
+    margin: 0 10px;
     max-width: 1200px;
 }
 
@@ -49,5 +50,28 @@
 @media screen and (max-width: 1050px) {
     .diplomaImage {
         padding-bottom: 64%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .diplomaBlock > div {
+        padding: 2px 5px;
+        margin: 5px 0;
+        font-size: 0.6em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .diplomaBlock {
+        height: auto;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .diplomaImageContainer {
+        height: 100%;
     }
 }
