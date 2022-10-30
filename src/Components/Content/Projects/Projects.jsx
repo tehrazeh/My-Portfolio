@@ -12,6 +12,7 @@ class Projects extends React.Component {
                 skills: ['JavaScript' , 'API'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'stats-dont-lie',
+                deployInfo: 'https://chipper-queijadas-0ddbcd.netlify.app/',
                 description: 
                 `The app allows you to check stat averages of an NBA player for a specific season.
                 It will show his picture, team, name, anthropometry and, of course, stats.
@@ -22,6 +23,7 @@ class Projects extends React.Component {
                 skills: ['TypeScript', 'Angular'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'pokemon-team-builder',
+                deployInfo: false,
                 description: 
                 `You can build a team of pokemons. There is a pool of nine pokemons to choose from
                 Each pokemon has different elemental type and attack. Once you click on a pokemon,

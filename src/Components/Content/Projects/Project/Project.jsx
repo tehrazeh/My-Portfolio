@@ -16,6 +16,12 @@ const Project = (props) => {
         )
     })
 
+    const projectLinkButton = <button className={s.titleButton} onClick={() => {
+        props.toggleActiveHeaderButton(null)
+    }}>
+        <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/website.png`)} alt='visibility' />
+    </button>
+
     const [repoStats, setRepoStats] = useState({})
 
     useEffect(() => {
@@ -60,13 +66,8 @@ const Project = (props) => {
                         <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/screenshots.png`)} alt='visibility' />
                     </button>
                 </Link>
-                <Link to='/notdeployed'>
-                    <button className={s.titleButton} onClick={() => {
-                        props.toggleActiveHeaderButton(null)
-                    }}>
-                        <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/website.png`)} alt='visibility' />
-                    </button>
-                </Link>
+                {props.projectData.deployInfo ? <a href={props.projectData.deployInfo}>{projectLinkButton}</a>
+                    : <Link to={'/notdeployed'}>{projectLinkButton}</Link>}
             </div>
             <div className={s.skills}>
                 Skills: {skills}
