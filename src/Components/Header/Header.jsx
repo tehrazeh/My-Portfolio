@@ -20,7 +20,7 @@ const Header = (props) => {
 
   const navButtons = appState.buttons.map((element, index) => {
     return (
-      <NavLink to={`/${element.label.toLowerCase()}`} key={element.id} 
+      <NavLink end to={`/${element.label.toLowerCase()}`} key={element.id} 
           className={({isActive}) => isActive? s.activeLink : s.regularLink}>
           <img className={s.navBarImage} alt='navbar pic'
             src={require(`../Header/Images/${element.label.toLowerCase()}.png`)} />
