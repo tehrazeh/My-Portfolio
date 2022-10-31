@@ -3,8 +3,6 @@ import gitHubImage from '../../../Sidebar/Images/github.png';
 import { getProjectInfo } from '../../../../Api/api';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { toggleActiveHeaderButton } from "../../../../Redux/header-reducer"
-import { connect } from 'react-redux'
 
 
 const Project = (props) => {
@@ -60,9 +58,7 @@ const Project = (props) => {
                         images: props.projectData.images,
                         imagesFolder: `ProjectsImages/${props.projectData.repository}-images`
                     }}>
-                    <button className={s.titleButton} onClick={() => {
-                        props.toggleActiveHeaderButton(null)
-                    }}>
+                    <button className={s.titleButton}>
                         <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/screenshots.png`)} alt='visibility' />
                     </button>
                 </Link>
@@ -110,4 +106,4 @@ const Project = (props) => {
     )
 }
 
-export default connect(null, { toggleActiveHeaderButton })(Project)
+export default Project

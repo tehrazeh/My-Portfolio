@@ -4,8 +4,6 @@ import leftArrow from './sliderImages/leftArrow.png';
 import rightArrow from './sliderImages/rightArrow.png';
 import back from './sliderImages/back.png'
 import { Link, useLocation } from 'react-router-dom'
-import { toggleActiveHeaderButton } from "../../../../Redux/header-reducer"
-import { connect } from 'react-redux'
 const ImageSlider = (props) => {
     const propsLocation = useLocation()
 
@@ -28,9 +26,7 @@ const ImageSlider = (props) => {
 
     return (
         <section className={s.slider}>
-            <Link to='/projects' onClick={() => {
-                props.toggleActiveHeaderButton(0)
-            }}>
+            <Link to='/projects'>
                 <button className={s.backButton}>
                     <img className={s.buttonImage} src={back} alt='go back'></img>
                 </button>
@@ -56,4 +52,4 @@ const ImageSlider = (props) => {
     )
 }
 
-export default connect(null, {toggleActiveHeaderButton})(ImageSlider)
+export default ImageSlider

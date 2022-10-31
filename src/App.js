@@ -1,5 +1,5 @@
 import './App.css';
-import HeaderContainer from './Components/Header/HeaderContainer';
+import Header from './Components/Header/Header';
 import Footer from './Components/Footer/Footer';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Main from './Components/Content/Main/Main';
@@ -14,8 +14,8 @@ import NotDeployed from './Components/NotFound/NotDeployed';
 function App(props) {
   return (
     <div className="App">
-      <HeaderContainer />
-      <Sidebar />
+      <Header/>
+      <Sidebar/>
       <div className="content">
         <Routes>
           <Route path='/' element={<Main />} />

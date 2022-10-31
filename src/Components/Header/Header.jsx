@@ -7,9 +7,8 @@ import { useState } from 'react';
 
 const Header = (props) => {
 
-  const [appState, changeState] = useState(() => {
+  const [appState] = useState(() => {
     return ({
-      activeButton: null,
       buttons: [
         { id: 0, label: 'Projects' },
         { id: 1, label: 'Resume' },
@@ -19,27 +18,13 @@ const Header = (props) => {
 
   })
 
-  function toggleActive(index) {
-    changeState({ ...appState, activeButton: appState.buttons[index] })
-    props.toggleActiveHeaderButton(index)
-
-  }
-
-  function toggleActiveStyle(index) {
-    return ((appState.buttons[index].id === props.activeButton ) ? 'navBarButtonActive' : 'navBarButton')
-  }
-
   const navButtons = appState.buttons.map((element, index) => {
     return (
-      <NavLink to={`/${element.label.toLowerCase()}`} key={element.id}>
-        <button className={s[toggleActiveStyle(index)]}
-          onClick={() => {
-            toggleActive(index)
-          }}>
+      <NavLink to={`/${element.label.toLowerCase()}`} key={element.id} 
+          className={({isActive}) => isActive? s.activeLink : s.regularLink}>
           <img className={s.navBarImage} alt='navbar pic'
             src={require(`../Header/Images/${element.label.toLowerCase()}.png`)} />
-          <p className={s.navBarButtonDescription}>{element.label}</p>
-        </button>
+          <p className={s.navBarImageDescription}>{element.label}</p>
       </NavLink>
     )
   })
@@ -52,10 +37,7 @@ const Header = (props) => {
       <div className={s.headerHome}>
         <div className={s.homeButtonBox}>
           <NavLink to='/'>
-            <img className={s.homeButton} alt='home button' src={homeBtn}
-              onClick={() => {
-                toggleActive(-1)
-              }} />
+            <img className={s.homeButton} alt='home button' src={homeBtn}/>
           </NavLink>
         </div>
 

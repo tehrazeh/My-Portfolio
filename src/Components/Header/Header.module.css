@@ -1,3 +1,4 @@
+
 .headerHome {
     grid-area: headerHome;
     display: flex;
@@ -14,35 +15,35 @@
     background-color: #2f3e46;
 }
 .homeButton {
-    width: 100px;
+    width: 80px;
     margin: 5px;
     cursor: pointer;
 }
 
 .homeButton:hover {
-transform: scale(1.05)
+transform: scale(1.05);
+filter:brightness(1.2)
 }
 
-
 /* THIS IS BUTTON SECTION */ 
-.navBarButton, .navBarButtonActive {
+
+.activeLink {  
+    border: 2px solid #484896;
+    background-color: #838ab0;
+}
+
+.regularLink {
+    border: 2px solid #22223b;
+    background-color: #42465d;
+}
+
+.regularLink, .activeLink {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 120px;
     cursor: pointer;
-}
-
-.navBarButtonActive {
-    border: 4px solid #484896;
-    background-color: #838ab0;
-    border-radius: 10px;
-}
-
-.navBarButton {
-    border: 4px solid #22223b;
-    background-color: #42465d;
     border-radius: 10px;
 }
 
@@ -51,7 +52,11 @@ transform: scale(1.05)
     margin: 3px;
 }
 
-.navBarButtonDescription {
+.navBarImage:hover, .activeLink:hover, .regularLink:hover {
+    filter:brightness(1.2)
+}
+
+.navBarImageDescription {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,7 +64,7 @@ transform: scale(1.05)
     width: 100%;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    color: antiquewhite;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -67,10 +72,11 @@ transform: scale(1.05)
     opacity: 0;
     margin: 0 auto;
     transition: opacity 0.25s;
-    font-size: 1.2em;
+    font-size: 1em;
+    border-radius: 8px;
 }
 
-.navBarButtonDescription:hover {
+.navBarImageDescription:hover {
     opacity: 1
 }
 
@@ -87,19 +93,19 @@ transform: scale(1.05)
         margin: 2.5px;
     }
 
-    .navBarButton, .navBarButtonActive {
-        margin: 3px;
-        width: 60px;
+    .regularLink, .activeLink {
+        margin: 1px;
+        width: 45px;
     }
 
 
     .navBarImage {
-        width: 40px;
+        width: 35px;
         margin: 1.5px;
     }
     
-    .navBarButtonDescription {
-        letter-spacing: 1px;
-        font-size: 0.95em;
+    .navBarImageDescription {
+        letter-spacing: 0.8px;
+        font-size: 0.65em;
     }
 }
