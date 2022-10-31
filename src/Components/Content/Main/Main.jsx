@@ -12,7 +12,7 @@ function Main() {
         <div className={s.MainSkills}>
           <h2>Hard Skills:</h2>
           <ul>
-            <li>JavaScript, HTML, CSS</li>
+            <li>JavaScript, HTML, CSS, SCSS/SASS </li>
             <li>React, TypeScript, Redux</li>
             <li>Relational Databases, REST API</li>
             <li>SOLID, OOP, Java, Git</li>
