@@ -1,4 +1,3 @@
-
 .headerHome {
     grid-area: headerHome;
     display: flex;
@@ -14,6 +13,7 @@
     align-items: center;
     background-color: #2f3e46;
 }
+
 .homeButton {
     width: 80px;
     margin: 5px;
@@ -21,88 +21,52 @@
 }
 
 .homeButton:hover {
-transform: scale(1.05);
-filter:brightness(1.2)
+    transform: scale(1.05);
+    filter: brightness(1.2)
 }
 
-/* THIS IS BUTTON SECTION */ 
-
-.activeLink {  
-    border: 2px solid #484896;
-    background-color: #838ab0;
+.activeLink {
+    border: 2px solid #6da1e3;
+    background-color: #3876b4;
 }
 
 .regularLink {
-    border: 2px solid #22223b;
-    background-color: #42465d;
+    border: 2px solid #001e2f;
+    background-color: #003554;
 }
 
-.regularLink, .activeLink {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 120px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.navBarImage {
-    width: 50px;
-    margin: 3px;
-}
-
-
-.navBarImageDescription {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+.regularLink,
+.activeLink {
+    box-shadow: inset 0 0 0 0 #54b3d6;
     border-radius: 5px;
-    background: rgba(0, 0, 0, 0.6);
+    margin: 0 -.25rem;
+    padding: 0 .25rem;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    text-decoration: none;
     color: antiquewhite;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 2px;
-    opacity: 0;
-    margin: 0 auto;
-    transition: opacity 0.25s;
-    font-size: 1em;
-    border-radius: 8px;
+    font-size: 1.2em
 }
 
-.navBarImageDescription:hover {
-    opacity: 1
+.regularLink:hover, .activeLink:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+  }
+
+
+.homeButtonBox {
+    display: flex;
+    align-items: center;
 }
 
 
 @media screen and (max-width: 800px) {
 
-    .homeButtonBox {
-        display: flex;
-        align-items: center;
-    }
-
     .homeButton {
         width: 50px;
         margin: 2.5px;
     }
-
-    .regularLink, .activeLink {
-        margin: 1px;
-        width: 45px;
-    }
-
-
-    .navBarImage {
-        width: 35px;
-        margin: 1.5px;
-    }
     
-    .navBarImageDescription {
-        letter-spacing: 0.8px;
-        font-size: 0.65em;
+    .activeLink, .regularLink{
+        font-size: 0.8em;
     }
 }
