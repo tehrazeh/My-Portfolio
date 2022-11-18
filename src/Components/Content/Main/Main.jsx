@@ -3,24 +3,24 @@ import s from './Main.module.css';
 function Main() {
   return (
     <div className={s.Main}>
-      <p>Junior Front End Developer.</p>
+      <p>Front End Developer.</p>
       <p>
         My hobbies are Coding, Filmmaking and Editing, Computers and Technologies in general,
         Basketball, and Video Games.
       </p>
       <div className={s.MainContainer}>
         <div className={s.MainSkills}>
-          <h2>Hard Skills:</h2>
+          <h2>Technologies:</h2>
           <ul>
             <li>JavaScript, HTML, CSS, SCSS/SASS </li>
             <li>React, TypeScript, Redux</li>
-            <li>Relational Databases, REST API</li>
-            <li>SOLID, OOP, Java, Git</li>
+            <li>SQL/MySQL, Node.js, MongoDB</li>
+            <li>Java, Angular, C, Git</li>
           </ul>
-          <h2>Knowledgeable in:</h2>
+          <h2>Practices and Methodoligies:</h2>
           <ul>
-            <li>Angular, Node JS, Linux</li>
-            <li>C, .NET, jQuery, MongoDB</li>
+            <li>OOP, SOLID, Design Patterns</li>
+            <li>Agile, Scrum, Waterfall</li>
           </ul>
         </div>
         <div className={s.MainSkills}>
