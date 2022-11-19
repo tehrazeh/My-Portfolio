@@ -1,14 +1,23 @@
 import s from './Main.module.css';
-
+import Typewriter from 'typewriter-effect';
 
 function Main() {
   return (
     <div className={s.Main}>
-      <p>Front End Developer.</p>
-      <p>
-        My hobbies are Coding, Filmmaking and Editing, Computers and Technologies in general,
-        Basketball, and Video Games.
-      </p>
+      <h2 className={s.title}>Front End Developer.</h2>
+      <div className={s.typewriter}>     
+        <Typewriter
+          options={{
+            strings: ['I love React.js', 'I know how to pilot an airliner',
+            'I am lefthanded',  'I am decent video editor', 'I have 5,156 hours in Dota 2', 
+            'I can build a PC', 'I am a huge NBA fan' ],
+            autoStart: true,
+            loop: true,
+            delay: 105,
+            pauseFor: 500
+          }}
+        />
+      </div>
       <div className={s.MainContainer}>
         <div className={s.MainSkills}>
           <h2>Technologies:</h2>
