@@ -2,7 +2,7 @@
     grid-area: headerHome;
     display: flex;
     justify-content: center;
-    background-color: #2f3e46;
+    background-color: rgb(33, 33, 33);
 }
 
 .headerNav {
@@ -12,6 +12,7 @@
     flex-wrap: wrap;
     align-items: center;
     background-color: #2f3e46;
+    border-radius: 5px;
 }
 
 .homeButton {
