@@ -13,8 +13,8 @@
     border-radius: 5px;
 }
 
-.title{
-    margin: 10px 0;
+.Main > p {
+    margin: 20px 0;
 }
 
 .MainContainer {
@@ -38,10 +38,6 @@ h3 {
     font-weight: normal;
 }
 
-p {
-    margin: 20px 0;
-    font-size: 1.2em;
-}
 
 li {
     text-align: left;
@@ -67,6 +63,87 @@ li {
     display: inline;
 }
 
+
+/* glich title block */
+.glitch{
+    display: inline;
+    position: relative;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #b2ff9e;
+    text-shadow:
+    0.025em 0 0 rgba(175,252,65,0.7),
+    -0.025em -0.05em 0 rgba(42,114,33,0.7),
+    0.025em 0.05em 0 rgba(76,149,108,0.7);
+    
+    animation: glitch 1000ms infinite;
+}
+
+.glitch > span {
+    position: absolute;
+    top: 25%;
+    left: 0;
+}
+.glitch span:first-child {
+    animation: glitch 650ms infinite;
+
+    z-index: 1;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+    transform: translate(-0.025em, -0.025em);
+    opacity: 0.7;
+}
+.glitch span:last-child {
+    animation: glitch 400ms infinite;
+    z-index: 1;
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+    transform: translate(0.025em, 0.025em);
+    opacity: 0.7;
+}
+
+@keyframes glitch {
+    0% {
+        text-shadow:
+            0.025em 0 0 rgba(175, 252, 65, 0.7),
+            -0.025em -0.05em 0 rgba(42, 114, 33, 0.7),
+            0.025em 0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+    14% {
+        text-shadow:
+            0.025em 0 0 rgba(175, 252, 65, 0.7),
+            -0.025em -0.05em 0 rgba(42, 114, 33, 0.7),
+            0.025em 0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+    15% {
+        text-shadow:
+            -0.05em -0.025em 0 rgba(175, 252, 65, 0.7),
+            0.025em 0.025em 0 rgba(42, 114, 33, 0.7),
+            -0.05em -0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+    49% {
+        text-shadow:
+            -0.05em -0.025em 0 rgba(175, 252, 65, 0.7),
+            0.025em 0.025em 0 rgba(42, 114, 33, 0.7),
+            -0.05em -0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+    50% {
+        text-shadow:
+            0.025em 0.05em 0 rgba(175, 252, 65, 0.7),
+            0.05em 0 0 rgba(42, 114, 33, 0.7),
+            0 -0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+    99% {
+        text-shadow:
+            0.025em 0.05em 0 rgba(175, 252, 65, 0.7),
+            0.05em 0 0 rgba(42, 114, 33, 0.7),
+            0 -0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+    100% {
+        text-shadow:
+            -0.025em 0 0 rgba(175, 252, 65, 0.7),
+            -0.025em -0.025em 0 rgba(42, 114, 33, 0.7),
+            -0.025em -0.05em 0 rgba(76, 149, 108, 0.7);
+    }
+}
 @media screen and (max-width: 800px) {
 
     .MainContainer {
@@ -77,8 +154,38 @@ li {
         font-size: 1.2em;
     }
 
-    .Main>p {
-        font-size: 1em;
+    .glitch {
+        font-size: 1.8rem;
+    } 
+
+    .glitch > span {
+        top: 10%;
     }
 
 }
+@media screen and (max-width: 500px) {
+
+    .glitch {
+        font-size: 1.2rem;
+    } 
+
+    .glitch > span {
+        top: -5%;
+    }
+
+}
+
+/* for people that prefer to turn off the animations */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-delay: -1ms !important;
+      animation-duration: 1ms !important;
+      animation-iteration-count: 1 !important;
+      background-attachment: initial !important;
+      scroll-behavior: auto !important;
+      transition-duration: 0s !important;
+      transition-delay: 0s !important;
+    }
+  }

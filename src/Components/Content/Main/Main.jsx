@@ -4,7 +4,11 @@ import Typewriter from 'typewriter-effect';
 function Main() {
   return (
     <div className={s.Main}>
-      <h2 className={s.title}>Front End Developer.</h2>
+      <p className={s.glitch}>
+        <span aria-hidden="true">Front End Developer</span>Front End
+        Developer<span aria-hidden="true">Front End Developer</span>
+        
+      </p>
       <div className={s.typewriter}>     
         <Typewriter
           options={{

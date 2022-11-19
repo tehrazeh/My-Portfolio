@@ -5,6 +5,7 @@ import { NavLink } from 'react-router-dom'
 import { useState } from 'react';
 
 
+
 const Header = (props) => {
 
   const [appState] = useState(() => {
@@ -20,12 +21,12 @@ const Header = (props) => {
 
   const navButtons = appState.buttons.map((element, index) => {
     return (
-      <NavLink end to={`/${element.label.toLowerCase()}`} key={element.id} 
-          className={({isActive}) => isActive? s.activeLink : s.regularLink}>
-          {/* <img className={s.navBarImage} alt='navbar pic'
+      <NavLink end to={`/${element.label.toLowerCase()}`} key={element.id}
+        className={({ isActive }) => isActive ? s.activeLink : s.regularLink}>
+        {/* <img className={s.navBarImage} alt='navbar pic'
             src={require(`../Header/Images/${element.label.toLowerCase()}.png`)} /> */}
-          {/* <p className={s.navBarImageDescription}>{element.label}</p> */}
-          <span>{element.label}</span>
+        {/* <p className={s.navBarImageDescription}>{element.label}</p> */}
+        <span>{element.label}</span>
       </NavLink>
     )
   })
@@ -38,11 +39,12 @@ const Header = (props) => {
       <div className={s.headerHome}>
         <div className={s.homeButtonBox}>
           <NavLink to='/'>
-            <img className={s.homeButton} alt='home button' src={homeBtn}/>
+            <img className={s.homeButton} alt='home button' src={homeBtn} />
           </NavLink>
         </div>
 
       </div>
+
       <div className={s.headerNav}>
         {navButtons}
       </div>
