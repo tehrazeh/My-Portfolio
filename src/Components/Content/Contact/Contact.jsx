@@ -8,7 +8,7 @@ class Contact extends React.Component {
         this.state = {
             contacts: [
                 { id: 1, label: 'Email', description: 'danilatolstoukhov@gmail.com' },
-                { id: 2, label: 'Phone', description: '+1 (365)-228-64-92 (Email preferred)' },
+                { id: 2, label: 'Phone', description: '+1 (365)-228-64-92' },
                 { id: 3, label: 'Address', description: 'Mississauga, ON. CA.' }
             ]
 

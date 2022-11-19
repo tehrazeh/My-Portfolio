@@ -1,31 +1,17 @@
 import s from './Resume.module.css'
 const Resume = (props) => {
     return (
-        <div>
+        <div className={s.resume}>
             <div className={s.ResumeBlock}>
-                <h3>Professional Summary</h3>
+                <h3>Summary</h3>
                 <p>
                     Sheridan graduate, Front-End developer. Love to code my ideas into reality.
                     Enjoy strengthening my skills through practice.
                 </p>
                 <ul>
-                    <li>2 years of Front-End Development. JavaScript, HTML, CSS</li>
-                    <li>React, TypeScript, Redux, Git, SCSS/SASS</li>
-                    <li>Knowledgeable in: Node.js, MySQL, Linux, Java, Angular</li>
-                    <li>During studies continuously used: SOLID, OOP, Agile</li>
-                    <li>Experience working with team and clients.
-                    </li>
-                </ul>
-            </div>
-            <br></br>
-            <div className={s.ResumeBlock}>
-                <h3>Work Experience</h3>
-                <h4>Walmart Associate, Dec 2021 - Present</h4>
-                <ul>
-                    <li>Dairy/Frozen associate with the duties of stocking products and helping customers</li>
-                    <li>I do my best to help the customers and leave a positive 
-                        impression about Walmart as a company.</li>
-                    <li>As a responsible employee, I consistently make managers smile after my shift.</li>
+                    <li>2 years of software development with a focus on the front-end aspect</li>
+                    <li>Build apps that solve a problem for people and have nifty features.</li>
+                    <li>Polish skills with practice and never-ending learning</li>
                 </ul>
             </div>
             <br></br>
@@ -35,6 +21,18 @@ const Resume = (props) => {
                 <p>Sheridan College, Oakville, ON</p>
                 <p>January 2021 – April 2022</p>
                 <p>Honors, 3.87/4 GPA</p>
+
+            </div>
+            <br></br>
+            <div className={s.ResumeBlock}>
+                <h3>Experience</h3>
+                <h4>Associate, Walmart, Dec 2021 - Present</h4>
+                <h4>Freelance, May 2020 - December 2020</h4>
+                <p>The main project was a web application for the sale of concrete rings business.
+                After that, my focus shifted to simple yet eye-catching portfolios
+                for fellow students using JavaScript, HTML, and CSS.
+                Then college started, and I stopped to focus on my studies.
+                </p>
             </div>
         </div>
     )

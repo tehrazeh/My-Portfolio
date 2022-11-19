@@ -19,7 +19,7 @@ function Main() {
           </ul>
           <h2>Practices and Methodoligies:</h2>
           <ul>
-            <li>OOP, SOLID, Design Patterns</li>
+            <li>OOP, SOLID</li>
             <li>Agile, Scrum, Waterfall</li>
           </ul>
         </div>

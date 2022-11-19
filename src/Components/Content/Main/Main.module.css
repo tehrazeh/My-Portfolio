@@ -1,5 +1,9 @@
 .Main {
     background-color: #152728;
+    background-image: url("../../../Assets/trees.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
     font-size: 1.05em; 
     grid-area: main;
     text-align: center;
