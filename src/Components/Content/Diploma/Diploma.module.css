@@ -32,8 +32,8 @@
 .diplomaBlock > div {
     color: #faa792;
     padding: 10px;
-    background-color: #720026;
-    border: 3px solid #4f000b;
+    background-color: rgba(114, 0, 38, 0.7);
+    border-radius: 5px;
     font-size: 1.2em;
 }
 
@@ -55,21 +55,20 @@
 
 @media screen and (max-width: 500px) {
 
+    .diplomaBlock {
+        height: auto;
+    }
+
     .diplomaBlock > div {
-        padding: 2px 5px;
-        margin: 5px 0;
+        height: 70px;
+        width: 90px;
+        padding: 0 5px;
+        text-align: center;
         font-size: 0.6em;
     }
 }
 
 @media screen and (max-width: 500px) {
-
-    .diplomaBlock {
-        height: auto;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-    }
 
     .diplomaImageContainer {
         height: 100%;

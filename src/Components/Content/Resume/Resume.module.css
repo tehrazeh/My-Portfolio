@@ -19,4 +19,33 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    line-height: 1.5em;
+}
+
+.resume li {
+    text-align: center;
+    list-style-type: none;
+}
+
+.resume h3, h4 {
+    font-weight: 600;
+    font-size: 1.25em;
+    line-height: 2em;
+}
+
+@media screen and (max-width: 800px) {
+  .ResumeBlock p {
+        font-size: 0.9em;
+    }
+
+    .ResumeBlock li {
+        font-size: 0.85em;
+    }
+    
+    .resume h3, h4 {
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 1.8em;
+    }
+
 }

@@ -9,9 +9,9 @@ const Resume = (props) => {
                     Enjoy strengthening my skills through practice.
                 </p>
                 <ul>
-                    <li>2 years of software development with a focus on the front-end aspect</li>
+                    <li>2 years of software development with a focus on the front-end aspect.</li>
                     <li>Build apps that solve a problem for people and have nifty features.</li>
-                    <li>Polish skills with practice and never-ending learning</li>
+                    <li>Polish skills with practice and never-ending learning.</li>
                 </ul>
             </div>
             <br></br>
