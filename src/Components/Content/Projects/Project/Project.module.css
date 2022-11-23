@@ -41,9 +41,25 @@
 }
 
 .projectPreview {
-    width: 600px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     border-radius: 3px;
-    margin-bottom: 20px;
+    display: block;
+}
+
+.previewPlaceholder {
+    width: 95%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.previewPlaceholder::before {
+    content: '';
+    display: block;
+    padding-bottom: 47%;
 }
 
 .titleButton {
@@ -147,10 +163,6 @@ span {
 @media screen and (max-width: 1500px) {
     .projectContainer {
         width: 85%;
-    }
-
-    .projectPreview {
-        width: 90%
     }
 }
 
