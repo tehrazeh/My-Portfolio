@@ -23,9 +23,6 @@ const Header = (props) => {
     return (
       <NavLink end to={`/${element.label.toLowerCase()}`} key={element.id}
         className={({ isActive }) => isActive ? s.activeLink : s.regularLink}>
-        {/* <img className={s.navBarImage} alt='navbar pic'
-            src={require(`../Header/Images/${element.label.toLowerCase()}.png`)} /> */}
-        {/* <p className={s.navBarImageDescription}>{element.label}</p> */}
         <span>{element.label}</span>
       </NavLink>
     )

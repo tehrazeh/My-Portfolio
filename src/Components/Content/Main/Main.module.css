@@ -1,9 +1,10 @@
 .Main {
     background-color: #152728;
-    background-image: url("../../../Assets/house.jpg");
+    background-image: url("../../../Assets/leaves.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
     font-size: 1.05em;
     grid-area: main;
     text-align: center;

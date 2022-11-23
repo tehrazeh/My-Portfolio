@@ -18,7 +18,8 @@
     background-image: url("../../../Assets/planet.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
     line-height: 1.5em;
     border-radius: 5px;
 }

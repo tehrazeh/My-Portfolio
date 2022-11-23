@@ -2,10 +2,11 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-image: url("../../../Assets/coding.jpg");
+    background-image: url("../../../Assets/cyber.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
     border-radius: 5px;
 }
 
