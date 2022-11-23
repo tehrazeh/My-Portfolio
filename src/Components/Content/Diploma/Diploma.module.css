@@ -35,6 +35,7 @@
     background-color: rgba(114, 0, 38, 0.7);
     border-radius: 5px;
     font-size: 1.2em;
+    text-align: center;
 }
 
 .diplomaBlock > div:hover {
@@ -55,22 +56,17 @@
 
 @media screen and (max-width: 500px) {
 
+    .diplomaImageContainer {
+        height: 100%;
+    }
+
     .diplomaBlock {
         height: auto;
     }
 
     .diplomaBlock > div {
-        height: 70px;
-        width: 90px;
-        padding: 0 5px;
-        text-align: center;
-        font-size: 0.6em;
-    }
-}
-
-@media screen and (max-width: 500px) {
-
-    .diplomaImageContainer {
-        height: 100%;
+        width: 60px;
+        padding: 5px;      
+        font-size: 0.7em;
     }
 }
