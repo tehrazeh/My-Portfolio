@@ -70,8 +70,10 @@ const Project = (props) => {
                     <div className={s.skills}>
                         Skills: {skills}
                     </div>
-                    <LazyLoadImage className={s.projectPreview} src={require(`../ProjectsImages/${props.projectData.repository}-images/preview.jpg`)}
-                        alt='skill pic' loading="lazy" effect="blur" placeholderSrc={require(`../ProjectsImages/${props.projectData.repository}-images/preview-placeholder.jpg`)}/>
+                    <LazyLoadImage className={s.projectPreview} 
+                        src={require(`../ProjectsImages/${props.projectData.repository}-images/preview.jpg`)}
+                        alt='skill pic' loading="lazy" effect="blur"
+                        placeholderSrc={require(`../ProjectsImages/${props.projectData.repository}-images/preview-placeholder.jpg`)}/>
                     <div className={s.dropdownContainer}>
                         <div className={s.dropdownElement}>
                             <button className={s.dropdownButton}>Description</button>

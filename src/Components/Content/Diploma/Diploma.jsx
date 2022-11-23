@@ -1,5 +1,7 @@
 import diplomaImage from './Images/diploma.png'
+import diplomaPreview from './Images/diploma-preview.jpg'
 import s from './Diploma.module.css'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 const Diploma = (props) => {
     return (
         <div className={s.diplomaContainer}>
@@ -12,7 +14,10 @@ const Diploma = (props) => {
                 </div>                
             </div>
             <div className={s.diplomaImageContainer}>
-                <img className={s.diplomaImage} alt='diploma' src={diplomaImage}/>
+            <LazyLoadImage className={s.diplomaImage}
+                        src={diplomaImage}
+                        alt='skill pic' loading="lazy" effect="blur"
+                        placeholderSrc={diplomaPreview}/>
             </div>
             
         </div>
