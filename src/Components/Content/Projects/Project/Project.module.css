@@ -12,10 +12,18 @@
     align-items: center;
 }
 
+.test {
+    font-size: 20em;
+}
+
+.loader {
+    margin: 200px 50px;
+}
 
 .projectTitle {
     font-size: 1.5em;
     width: 100%;
+    margin-top: 8px;
 }
 
 .dropdownElement {
@@ -144,6 +152,11 @@ span {
     .projectPreview {
         width: 90%
     }
+
+    .loader {
+        margin: 80px 40px;
+    }
+    
 }
 
 
@@ -188,6 +201,10 @@ span {
     .projectTitle {
         font-size: 1em;
     }
+
+    .loader {
+        margin: 60px 30px;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -219,6 +236,10 @@ span {
         width: 20px;
     }
 
+    .loader {
+        margin: 40px 20px;
+    }
+
 }
 
 
@@ -248,6 +269,10 @@ span {
         height: 30px;
         padding: 5px;
         margin: 2px;
+    }
+
+    .loader {
+        margin: 20px 10px;
     }
 
 
