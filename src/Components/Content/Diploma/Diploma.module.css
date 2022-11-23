@@ -5,19 +5,39 @@
     align-items: center;
     color: rgb(253, 236, 216);
     height: 100%;
+    width: 95%;
+}
+
+.placeholderRatio {
+    position: relative;
+    width: 100%;
+}
+
+.placeholderRatio::before {
+    content: '';
+    display: block;
+    width: 100%;
+    background-color: #023047;
+    padding-bottom: 64%;
 }
 
 .diplomaImageContainer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    margin: 0 10px;
+    margin: 10px;
     max-width: 1200px;
+    width: 100%;
+    padding-bottom: 64%;
 }
 
 .diplomaImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    /*  */
     width: 100%;
-    margin-bottom: 15px;
     object-fit: scale-down;
 }
 .diplomaBlock {
@@ -45,12 +65,6 @@
 @media screen and (max-width: 800px) {
     .diplomaBlock > div {
         font-size: 0.9em;
-    }
-}
-
-@media screen and (max-width: 1050px) {
-    .diplomaImage {
-        padding-bottom: 64%;
     }
 }
 

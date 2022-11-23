@@ -11,15 +11,17 @@ const Diploma = (props) => {
                 </div>
                 <div>
                     <p>GPA: 3.87/4 (Honors)</p>
-                </div>                
+                </div>
             </div>
             <div className={s.diplomaImageContainer}>
-            <LazyLoadImage className={s.diplomaImage}
+                <div className={s.placeholderRatio}>
+                    <LazyLoadImage className={s.diplomaImage}
                         src={diplomaImage}
                         alt='skill pic' loading="lazy" effect="blur"
-                        placeholderSrc={diplomaPreview}/>
+                        placeholderSrc={diplomaPreview} />
+                </div>
             </div>
-            
+
         </div>
     )
 }
