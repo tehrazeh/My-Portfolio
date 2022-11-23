@@ -16,10 +16,6 @@
     font-size: 20em;
 }
 
-.loader {
-    margin: 200px 50px;
-}
-
 .projectTitle {
     font-size: 1.5em;
     width: 100%;
@@ -74,6 +70,10 @@
 
 .dropdownMenu {
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     left: -100%;
     top: calc(100% + 0.3rem);
     background-color: #283e55;
@@ -152,11 +152,6 @@ span {
     .projectPreview {
         width: 90%
     }
-
-    .loader {
-        margin: 80px 40px;
-    }
-    
 }
 
 
@@ -172,7 +167,7 @@ span {
 
     .dropdownMenuContainer {
         width: 200px;
-        padding: 0 5px;
+        padding: 2px;
         margin: 2px;
         border-radius: 1px;
         line-height: 1.2em;
@@ -202,9 +197,6 @@ span {
         font-size: 1em;
     }
 
-    .loader {
-        margin: 60px 30px;
-    }
 }
 
 @media screen and (max-width: 600px) {
@@ -236,8 +228,10 @@ span {
         width: 20px;
     }
 
-    .loader {
-        margin: 40px 20px;
+    .skillsPic {
+        width: 20px;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
 }
@@ -252,29 +246,30 @@ span {
     }
     
     .dropdownMenu {
-        width: 145px;
+        width: 130px;
+        padding: 2px 0;
+        left: -80%;
     }
     
     .dropdownMenuContainer {
-        width: 130px;
+        width: 110px;
+        line-height: 1.2em;
+        letter-spacing: 0.05em;
+        font-weight: 100;
+        padding: 2px;
     }
 
     .titleButton {
-        padding: 2px;
-        margin: 1px;
+        padding: 1px;
     }
 
     .dropdownButton {
-        width: 80px;
-        height: 30px;
+        width: 55px;
+        font-size: 0.5em;
+        height: 20px;
         padding: 5px;
         margin: 2px;
     }
-
-    .loader {
-        margin: 20px 10px;
-    }
-
 
 }
 

@@ -166,12 +166,37 @@ li {
 }
 @media screen and (max-width: 500px) {
 
+    .MainSkills {
+        line-height: 1.5em;
+        padding: 2px;
+    }
+
     .glitch {
         font-size: 1.2rem;
     } 
 
     .glitch > span {
         top: -5%;
+    }
+
+    .typewriter {
+        font-size: 0.8em;
+    }
+
+}
+
+@media screen and (max-width: 350px) {
+
+    .glitch {
+        font-size: 0.8rem;
+    } 
+
+    .glitch > span {
+        top: -30%;
+    }
+
+    h2, h3, li {
+        font-size: 0.8em;
     }
 
 }
