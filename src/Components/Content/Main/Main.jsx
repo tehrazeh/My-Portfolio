@@ -9,7 +9,8 @@ function Main() {
         Developer<span aria-hidden="true">Front End Developer</span>
         
       </p>
-      <div className={s.typewriter}>     
+      <div className={s.name}>Hi! My name is Danila, and ...</div> 
+      <div className={s.typewriter}>    
         <Typewriter
           options={{
             strings: ['I love React.js', 'I know how to pilot an airliner',

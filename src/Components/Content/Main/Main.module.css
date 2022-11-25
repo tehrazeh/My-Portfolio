@@ -35,6 +35,12 @@
     line-height: 2em;
 }
 
+.name {
+    font-size: 1.5em;
+    color: #dbedbb;
+    margin: 18px;
+}
+
 h3 {
     font-weight: normal;
 }
@@ -182,12 +188,15 @@ li {
     .typewriter {
         font-size: 0.8em;
     }
+    .name {
+        font-size: 1em;
+    }
 
 }
 
 @media screen and (max-width: 350px) {
 
-    .glitch {
+    .glitch, .name {
         font-size: 0.8rem;
     } 
 
@@ -198,7 +207,6 @@ li {
     h2, h3, li {
         font-size: 0.8em;
     }
-
 }
 
 /* for people that prefer to turn off the animations */
