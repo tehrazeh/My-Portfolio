@@ -4,14 +4,14 @@ const Resume = (props) => {
         <div className={s.resume}>
             <div className={s.ResumeBlock}>
                 <h3>Summary</h3>
-                <p>
+                <h4>
                     Sheridan graduate, Front-End developer. Love to code my ideas into reality.
-                    Enjoy strengthening my skills through practice.
-                </p>
+                </h4>
                 <ul>
-                    <li>2 years of software development with a focus on the front-end aspect.</li>
-                    <li>Build apps that solve a problem for people and have nifty features.</li>
-                    <li>Polish skills with practice and never-ending learning.</li>
+                    <li>Enjoy strengthening my skills through practice.</li>
+                    <li>Building apps that solve a problem for people and have nifty features.</li>
+                    <li>Ensuring code is scalable, responsive, and easy to maintain</li>
+                    <li>Polishing skills with practice and never-ending learning.</li>
                 </ul>
             </div>
             <br></br>

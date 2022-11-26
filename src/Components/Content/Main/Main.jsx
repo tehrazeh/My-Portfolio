@@ -54,7 +54,7 @@ function Main() {
                 </div>
             })}
           </div>
-          <h3>Have experience</h3>
+          <h3>Had experience</h3>
           <div className={s.skillsSection}>
             {skills.map((skill) => {
               if (!skill.isDaily)
@@ -71,9 +71,9 @@ function Main() {
             Love to follow best practices, learn new technologies, get better every day.
           </h3>
           <h3>
-            Teamwork multiplies productivity and learning speed.
+            I value teamwork and discipline in a workspace.
           </h3>
-          <h3>Want me to become a valuable member of your team?</h3>
+          <h3>Want me to become a member of your team?</h3>
           <h3>
             Do not hesitate to <Link to='/Contact'>contact</Link> me {`:)`}
           </h3>
