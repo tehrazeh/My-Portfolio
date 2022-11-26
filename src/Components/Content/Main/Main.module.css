@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    height: 100%;
     font-size: 1.05em;
     grid-area: main;
     text-align: center;
@@ -185,10 +186,7 @@ li {
         top: -5%;
     }
 
-    .typewriter {
-        font-size: 0.8em;
-    }
-    .name {
+    .typewriter, .name {
         font-size: 1em;
     }
 
@@ -196,12 +194,12 @@ li {
 
 @media screen and (max-width: 350px) {
 
-    .glitch, .name {
+    .glitch, .name, .typewriter {
         font-size: 0.8rem;
     } 
 
     .glitch > span {
-        top: -30%;
+        top: -40%;
     }
 
     h2, h3, li {
