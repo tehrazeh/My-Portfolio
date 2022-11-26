@@ -2,13 +2,8 @@
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    background-image: url("../../../Assets/cyber.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100%;
     border-radius: 5px;
+    background-color: rgb(19, 31, 45);
 }
 
 
