@@ -18,7 +18,8 @@ function Main() {
     { skillName: 'responsive design', image: 'responsive.png', isDaily: true },
     { skillName: 'angular', image: 'angular.png', isDaily: false },
     { skillName: 'node.js', image: 'nodejs.png', isDaily: false },
-    { skillName: 'java.js', image: 'java.png', isDaily: false }
+    { skillName: 'java', image: 'java.png', isDaily: false },
+    { skillName: 'mysql/ mongodb', image: 'database.png', isDaily: false}
   ]
   return (
     <div className={s.Main}>
