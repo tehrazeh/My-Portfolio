@@ -1,5 +1,5 @@
 import s from './Project.module.css';
-import gitHubImage from '../../../Sidebar/Images/github.png';
+import gitHubImage from '../../../../Assets/Skills/github.png';
 import { getProjectInfo } from '../../../../Api/api';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
@@ -10,7 +10,7 @@ const Project = (props) => {
 
     const skills = props.projectData.skills.map(skill => {
         return (
-            <img className={s.skillsPic} src={require(`../SkillsImages/${skill.toLowerCase()}.png`)}
+            <img className={s.skillsPic} src={require(`../../../../Assets/Skills/${skill.toLowerCase()}.png`)}
                 alt='skill pic' key={skill} />
         )
     })

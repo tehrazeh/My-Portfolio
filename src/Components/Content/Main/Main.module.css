@@ -13,13 +13,52 @@
     margin: 20px 0;
 }
 
+.skillsSection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.skillBox {
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    color: #c7eec7;
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin: 10px;
+    width: 80px;
+}
+
+.skillBox img {
+    width: 45px;
+    margin: 8px;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(98, 184, 135);
+    font-size: 1.2em;
+    transition: 150ms ease-in-out;
+}
+
+a:hover {
+    text-decoration:underline ;
+    filter:brightness(1.2);
+}
+
 .MainContainer {
     display: flex;
     justify-content: center;
     margin: 20px;
 }
 
-.MainSkills {
+.MainBlock {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -28,6 +67,7 @@
     margin: 10px;
     padding: 10px 20px;
     line-height: 2em;
+    max-width: 600px;
 }
 
 .name {
@@ -167,7 +207,7 @@ li {
 }
 @media screen and (max-width: 500px) {
 
-    .MainSkills {
+    .MainBlock {
         line-height: 1.5em;
         padding: 2px;
     }
@@ -184,6 +224,16 @@ li {
         font-size: 1em;
     }
 
+    .skillBox {      
+        font-size: 0.8em;
+        width: 60px;
+    }
+
+    .skillBox img {
+        width: 30px;
+        margin: 5px;
+    }
+
 }
 
 @media screen and (max-width: 350px) {
@@ -198,6 +248,16 @@ li {
 
     h2, h3, li {
         font-size: 0.8em;
+    }
+
+    .skillBox {      
+        font-size: 0.6em;
+        margin: 5px;
+    }
+
+    .skillBox img {
+        width: 30px;
+        margin: 5px;
     }
 }
 
