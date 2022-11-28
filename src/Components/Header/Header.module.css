@@ -2,7 +2,8 @@
     grid-area: headerHome;
     display: flex;
     justify-content: center;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(66, 64, 64);
+    border-radius: 5px;
 }
 
 .headerNav {
@@ -45,7 +46,7 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     text-decoration: none;
     color: antiquewhite;
-    font-size: 1.2em
+    font-size: 0.8em !important;
 }
 
 .regularLink:hover, .activeLink:hover {
@@ -68,5 +69,17 @@
     
     .activeLink, .regularLink{
         font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .homeButton {
+        width: 30px;
+        margin-top: 8px
+    }
+
+    .regularLink,
+    .activeLink {
+    font-size: 0.6em !important;
     }
 }

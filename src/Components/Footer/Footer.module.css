@@ -3,4 +3,17 @@
     color: #94918f;
     font-size: 1.2em;
     grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .Footer{
+        font-size: 0.8em;
+    }
 }

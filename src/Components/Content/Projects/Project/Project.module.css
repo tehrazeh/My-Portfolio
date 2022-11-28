@@ -86,7 +86,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    left: -100%;
+    left: -125%;
     top: calc(100% + 0.3rem);
     background-color: #283e55;
     padding: .5rem;
@@ -103,17 +103,17 @@
 
 .dropdownMenuContainer {
     background-color: #2f4862;
-    width: 300px;
+    width: 350px;
     display: flex;
-    padding: 0, 10px;
+    padding: 0 5px;
     justify-content: center;
     align-items: center;
-    margin: 4px;
     padding: 0 4px;
     border-radius: 2px;
     color: rgb(219, 227, 234);
-    line-height: 1.4em;
-    font-size: 1em;   
+    line-height: 1em;
+    font-size: 0.9em;
+    font-weight: 300; 
 }
 
 .dropdownSkills {
@@ -169,16 +169,12 @@ span {
         margin: 10px 10px 170px 10px;
     }
 
-    .dropdownMenu {
-        padding: .3rem;
-    }
 
     .dropdownMenuContainer {
-        width: 200px;
+        width: 250px;
         padding: 2px;
-        margin: 2px;
         border-radius: 1px;
-        line-height: 1.2em;
+        line-height: 0.8em;
         justify-content: space-evenly;
         font-size: 0.7em;   
     }
@@ -190,7 +186,7 @@ span {
     }
 
     .dropdownMenu {
-        left: -55%;
+        left: -90%;
     }
 
     .dropdownButton {
@@ -210,16 +206,17 @@ span {
 @media screen and (max-width: 600px) {
 
     .projectContainer {
-        margin: 5px 5px 120px 5px;
+        margin: 5px 5px 130px 5px;
         width: 80%;
     }
-    
+
     .dropdownMenu {
-        width: 180px;
+        left: -70%;
+        width: 200px;
     }
     
     .dropdownMenuContainer {
-        width: 165px;
+        width: 198px;
         font-size: 0.6em;   
     }
 
@@ -230,6 +227,10 @@ span {
     .titleButton {
         width: 25px;
         height: 25px;
+    }
+
+    .dropdownMenuContainer > p{
+        line-height: 1.5em;
     }
 
     .titleButtonImage {
@@ -248,23 +249,38 @@ span {
 @media screen and (max-width: 400px) {
 
     .projectContainer {
-        margin: 5px 5px 120px 5px;
-        width: 80%;
-        font-size: 14px!important;
+        width: 95%;
+        margin: 2px 2px 100px 2px;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .projectTitle, .skills {
+        font-size: 0.6em;
+    }
+
+    .projectTitle > p {
+        line-height: 1em;
     }
     
     .dropdownMenu {
-        width: 130px;
-        padding: 2px 0;
+        padding: 3px;
+        margin: 0;
+        width: 140px;
         left: -80%;
     }
     
     .dropdownMenuContainer {
-        width: 110px;
-        line-height: 1.2em;
+        width: 138px;
         letter-spacing: 0.05em;
+        font-size: 0.5em;
         font-weight: 100;
-        padding: 2px;
+    }
+
+    .dropdownMenuContainer > p{
+        padding: 0px;
+        margin: 0px;
+        line-height: 1.3em;
     }
 
     .titleButton {
@@ -272,10 +288,11 @@ span {
     }
 
     .dropdownButton {
-        width: 55px;
-        font-size: 0.5em;
-        height: 20px;
-        padding: 5px;
+        width: 70px;
+        font-size: 0.6em;
+        font-weight: 100;
+        height: 30px;
+        padding: 4px;
         margin: 2px;
     }
 

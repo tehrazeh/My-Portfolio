@@ -56,3 +56,20 @@
     }
 
 }
+
+@media screen and (max-width: 400px) {
+
+    .sideBarImage {
+        width: 40px;
+    }
+
+    .sideBarButton {
+        margin: 2px;
+    }
+
+    .buttonDiscription {
+        letter-spacing: 1px;
+        font-size: 0.7em;
+    }
+
+}

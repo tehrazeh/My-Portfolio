@@ -8,7 +8,7 @@
     "headerHome headerNav"
     "sidebar main"
     "footer footer" ;
-    grid-gap: 0.3rem;
+    grid-gap: 0.15rem;
 }
 
 .content {

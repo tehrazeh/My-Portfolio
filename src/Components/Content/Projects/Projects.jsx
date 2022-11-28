@@ -14,10 +14,9 @@ class Projects extends React.Component {
                 repository: 'stats-dont-lie',
                 deployInfo: 'https://chipper-queijadas-0ddbcd.netlify.app/',
                 description: 
-                `The app allows you to check stat averages of an NBA player for a specific season.
+                `Check stat averages of an NBA player for a specific season.
                 It will show his picture, team, name, anthropometry and, of course, stats.
-                The custom badge system will reward player a badge if his average of specific stat
-                satisfies the minimum value.`},
+                Player can earn a badge for outstanding performance in one or more caterogries.`},
                 
                 {id: 2, title: 'Pokemon Team Builder',
                 skills: ['TypeScript', 'Angular'],
@@ -25,10 +24,9 @@ class Projects extends React.Component {
                 repository: 'pokemon-team-builder',
                 deployInfo: false,
                 description: 
-                `You can build a team of pokemons. There is a pool of nine pokemons to choose from
+                `You can build a team of pokemons.
                 Each pokemon has different elemental type and attack. Once you click on a pokemon,
-                you will see its evolution form and type. Once you add a pokemon to your team,
-                you will be able to see who is on your team at the bottom of the page`}
+                you will see its evolution form and type.`}
 
             ]
         }
