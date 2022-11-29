@@ -46,7 +46,7 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     text-decoration: none;
     color: antiquewhite;
-    font-size: 0.8em !important;
+    font-size: 1.1em !important;
 }
 
 .regularLink:hover, .activeLink:hover {

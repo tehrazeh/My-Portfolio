@@ -25,11 +25,9 @@ const ImageSlider = (props) => {
     }
 
     return (
-        <section className={s.slider}>
-            <Link to='/projects'>
-                <button className={s.backButton}>
+        <div className={s.slider}>
+            <Link className={s.backLink} to='/projects'>
                     <img className={s.buttonImage} src={back} alt='go back'></img>
-                </button>
             </Link>
             
             <button className={s.leftButton} onClick={previousSlide}>
@@ -48,7 +46,7 @@ const ImageSlider = (props) => {
                     </div>
                 )
             })}
-        </section>
+        </div>
     )
 }
 
