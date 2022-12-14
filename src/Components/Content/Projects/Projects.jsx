@@ -8,7 +8,15 @@ class Projects extends React.Component {
         super(props)
         this.state = {
             projects: [
-                {id: 1, title: 'Stats dont Lie',
+                {id: 1, title: 'Eyes Holo',
+                skills: ['React' , 'Redux', 'API', 'SASS'],
+                images: ['1', '2', '3', '4', '5'],
+                repository: 'eyes-holo',
+                deployInfo: 'https://eyes-holo.vercel.app/',
+                description: 
+                `Discover interesting details and stats about every hero and item in Dota 2.
+                Lores, roles of heroes, components of an item. It has it all`},
+                {id: 2, title: 'Stats dont Lie',
                 skills: ['JavaScript' , 'API'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'stats-dont-lie',
@@ -16,9 +24,8 @@ class Projects extends React.Component {
                 description: 
                 `Check stat averages of an NBA player for a specific season.
                 It will show his picture, team, name, anthropometry and, of course, stats.
-                Player can earn a badge for outstanding performance in one or more caterogries.`},
-                
-                {id: 2, title: 'Pokemon Team Builder',
+                Player can earn a badge for outstanding performance in one or more caterogries.`},               
+                {id: 3, title: 'Pokemon Team Builder',
                 skills: ['TypeScript', 'Angular'],
                 images: ['1', '2', '3', '4', '5'],
                 repository: 'pokemon-team-builder',

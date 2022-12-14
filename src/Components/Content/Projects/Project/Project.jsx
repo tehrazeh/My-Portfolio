@@ -7,7 +7,6 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 
 const Project = (props) => {
-
     const skills = props.projectData.skills.map(skill => {
         return (
             <img className={s.skillsPic} src={require(`../../../../Assets/Skills/${skill.toLowerCase()}.png`)}
@@ -16,7 +15,6 @@ const Project = (props) => {
     })
 
     const projectLinkButton = <button className={s.titleButton} onClick={() => {
-        props.toggleActiveHeaderButton(null)
     }}>
         <img className={s.titleButtonImage} src={require(`../ProjectsImages/assets/website.png`)} alt='visibility' />
     </button>

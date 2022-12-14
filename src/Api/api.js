@@ -9,7 +9,7 @@ const dateConversion = (date) => {
 }
 
 export const getProjectInfo = async (repositoryName) => {  
-        const response = await axios.get(`https://api.github.com/repos/tehrazeh/${repositoryName}/commits`)
+        const response = await axios.get(`https://api.github.com/repos/tehrazeh/${repositoryName}/commits?per_page=100`)
         const projectData = {
         dateCreated: dateConversion(response.data[response.data.length - 1].commit.committer.date.substring(0, 10)),
         totalCommits: response.data.length,

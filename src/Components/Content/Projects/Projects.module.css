@@ -3,6 +3,7 @@
     height: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     border-radius: 5px;
     background-color: rgb(19, 31, 45);
 }
