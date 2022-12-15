@@ -32,8 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     top: 100px;
     position: absolute;
     border-radius: 50%;
@@ -44,9 +44,14 @@
 
 
 .backLink {
+    display: flex;
+    justify-content: center;
+    align-self: center;
     position: absolute;
-    top: 20px;
+    top: 10px;
     z-index: 5;
+    opacity: 40%;
+    width: 60px
 }
 
 
@@ -92,22 +97,32 @@
 @media screen and (max-width: 660px) {
 
     .buttonImage {
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
     }    
     .leftButton, .rightButton{
-        width: 35px;
-        height: 35px;
+        width: 20px;
+        height: 20px;
         top: 55px;
     }
 
     .backLink {
+        width: 25px;
+        height: 25px;
         top: 15px;
     }
 
     .activeSlide {
         height: 90%;
         max-height: 350px;
+    }
+
+    .rightButton {
+        right: 2px;
+    }
+    
+    .leftButton, .backLink {
+        left: 2px;
     }
 
 }
