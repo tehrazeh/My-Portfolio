@@ -1,5 +1,7 @@
-.resume{
-    background-color: rgba(7, 18, 50, 0.6);
+img {
+    width: 50px;
+    vertical-align: middle;
+    margin: 5px;
 }
 
 .ResumeBlock {
@@ -10,6 +12,20 @@
     border-radius: 8px;
     background-color: rgba(7, 18, 50, 0.6);
     color:rgb(196, 213, 207);
+    font-weight: 300;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+li {
+    list-style-type: none;
+    margin: 10px 0;
+}
+
+
+.blockTitle {
+    display: flex;
+    align-items: center;
 }
 
 .resume {
@@ -21,41 +37,16 @@
     flex-wrap: wrap;
     line-height: 1.5em;
     border-radius: 5px;
+    background-color: rgba(7, 18, 50, 0.6);
 }
 
-.resume li {
-    text-align: center;
-    list-style-type: none;
-}
-
-.resume h3, h4 {
-    font-weight: 600;
-    font-size: 1.25em;
-    line-height: 2em;
-}
-
-h4 {
-    margin: 10px;
-}
-
-p, li {
-    line-height: 2.2em;
-    font-size: 1.2em;
-}
 
 @media screen and (max-width: 800px) {
-  .ResumeBlock p {
-        font-size: 0.9em;
-    }
-
-    .ResumeBlock li {
-        font-size: 0.85em;
+    .ResumeBlock {
+        width: 95%;
+        margin: 5px;
+        font-size: 1em;
+        line-height: 1.5em;
     }
     
-    .resume h3, h4 {
-        font-weight: 500;
-        font-size: 1.1em;
-        line-height: 1.8em;
-    }
-
 }
