@@ -2,8 +2,8 @@
     min-height: 100vh;
     background-color: rgb(33, 33, 33);
     display: grid;
-    grid-template-columns: 0.12fr 1.2fr;
-    grid-template-rows: 0.2fr 6fr 0.2fr;
+    grid-template-columns: 60px 1.2fr;
+    grid-template-rows: 60px 6fr 0.2fr;
     grid-template-areas:
     "headerHome headerNav"
     "sidebar main"
@@ -17,4 +17,11 @@
     justify-content: space-evenly;
     align-items: center;
     border-radius: 5px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .App {
+        grid-template-columns: 40px 1.2fr;
+    }
 }

@@ -23,7 +23,9 @@ class Sidebar extends React.Component {
     })    
     return (
       <div className={s.Sidebar}>
+        <div>
         {sidebarElements}
+        </div>
       </div>
     )
   }

@@ -17,8 +17,8 @@
 }
 
 .homeButton {
-    width: 60px;
-    margin: 10px;
+    width: 50px;
+    margin: 5px;
     cursor: pointer;
 }
 
@@ -63,7 +63,6 @@
 @media screen and (max-width: 800px) {
 
     .homeButton {
-        width: 50px;
         margin: 2.5px;
     }
     

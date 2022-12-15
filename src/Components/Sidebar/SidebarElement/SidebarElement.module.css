@@ -1,16 +1,17 @@
 .sideBarImage {
-    width: 100px;
+    width: 40px;
+    vertical-align: middle;
 }
 
 .sideBarButton {
     position: relative;
     display: flex;
     align-items: center;
-    border: 3px solid #001e2f;
+    border: 2px solid #00141f;
     border-radius: 4px;
-    background-color: #003554;
+    background-color: #01253a;
     cursor: pointer;
-    margin: 10px 5px;
+    margin: 2px 0;
 }
 
 .buttonDiscription {
@@ -20,56 +21,31 @@
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: #ffffff;
+    color: #dfdcdc;
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 100;
     margin: auto;
-    transition: opacity 0.25s;
-    font-size: 1.4em;
+    transition: opacity 0.2s ease-in-out;
+    font-size: 0.9em;
 }
 
 .buttonDiscription:hover {
     opacity: 1
 }
 
-@media screen and (max-width: 1200px) {
-    .sideBarImage {
-        width: 80px;
-    }
-}
-
-@media screen and (max-width: 800px) {
-    .sideBarImage {
-        width: 50px;
-    }
-
-    .sideBarButton {
-        margin: 3px;
-    }
-
-    .buttonDiscription {
-        letter-spacing: 1px;
-        font-size: 1em;
-    }
-
-}
-
 @media screen and (max-width: 400px) {
 
     .sideBarImage {
-        width: 40px;
-    }
-
-    .sideBarButton {
-        margin: 2px;
+        width: 25px;
     }
 
     .buttonDiscription {
         letter-spacing: 1px;
-        font-size: 0.7em;
+        font-size: 0.6em;
     }
 
 }
