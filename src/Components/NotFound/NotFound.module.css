@@ -25,7 +25,7 @@
 
 @media screen and (max-width: 660px) {
     .notFoundImage {
-        width: 100px;
-        padding: 10px 15px
+        width: 50px;
+        padding: 5px
     }
 }

@@ -15,6 +15,7 @@ function Main() {
     { skillName: 'git', image: 'git.png', isDaily: true },
     { skillName: 'github', image: 'github.png', isDaily: true },
     { skillName: 'rest api', image: 'api.png', isDaily: true },
+    { skillName: 'testing', image: 'testing.png', isDaily: true },
     { skillName: 'responsive design', image: 'responsive.png', isDaily: true },
     { skillName: 'angular', image: 'angular.png', isDaily: false },
     { skillName: 'node.js', image: 'nodejs.png', isDaily: false },
