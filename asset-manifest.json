@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.6347fd47.css",
-    "main.js": "/My-Portfolio/static/js/main.72171455.js",
+    "main.css": "/My-Portfolio/static/css/main.da1cd70e.css",
+    "main.js": "/My-Portfolio/static/js/main.016fce11.js",
     "static/js/787.128fc6e9.chunk.js": "/My-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/1.png": "/My-Portfolio/static/media/1.0a3e4baedaa2f1ed8971.png",
     "static/media/preview.jpg": "/My-Portfolio/static/media/preview.e6d4487f5abef2d60d3b.jpg",
@@ -33,6 +33,7 @@
     "static/media/screenshots.png": "/My-Portfolio/static/media/screenshots.c88a44db648ffe56c90e.png",
     "static/media/nodejs.png": "/My-Portfolio/static/media/nodejs.e328955d6bbbf3ebc72b.png",
     "static/media/database.png": "/My-Portfolio/static/media/database.3c198a7d5e7c00dbb0f3.png",
+    "static/media/testing.png": "/My-Portfolio/static/media/testing.e496972d657c030d2d8c.png",
     "static/media/back.png": "/My-Portfolio/static/media/back.bc8a52ead02fec97a656.png",
     "static/media/home.png": "/My-Portfolio/static/media/home.5dc575959c0fd38b6df4.png",
     "static/media/responsive.png": "/My-Portfolio/static/media/responsive.187eab262bf0152599e6.png",
@@ -43,12 +44,12 @@
     "static/media/typescript.png": "/My-Portfolio/static/media/typescript.af108db04a54d784da9b.png",
     "static/media/javascript.png": "/My-Portfolio/static/media/javascript.3dfb665e058d08c99f28.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.6347fd47.css.map": "/My-Portfolio/static/css/main.6347fd47.css.map",
-    "main.72171455.js.map": "/My-Portfolio/static/js/main.72171455.js.map",
+    "main.da1cd70e.css.map": "/My-Portfolio/static/css/main.da1cd70e.css.map",
+    "main.016fce11.js.map": "/My-Portfolio/static/js/main.016fce11.js.map",
     "787.128fc6e9.chunk.js.map": "/My-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6347fd47.css",
-    "static/js/main.72171455.js"
+    "static/css/main.da1cd70e.css",
+    "static/js/main.016fce11.js"
   ]
 }
