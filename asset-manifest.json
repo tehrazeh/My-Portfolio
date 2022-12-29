@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Portfolio/static/css/main.da1cd70e.css",
-    "main.js": "/My-Portfolio/static/js/main.016fce11.js",
+    "main.css": "/My-Portfolio/static/css/main.02287fb2.css",
+    "main.js": "/My-Portfolio/static/js/main.ae49fa99.js",
     "static/js/787.128fc6e9.chunk.js": "/My-Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/1.png": "/My-Portfolio/static/media/1.0a3e4baedaa2f1ed8971.png",
     "static/media/preview.jpg": "/My-Portfolio/static/media/preview.e6d4487f5abef2d60d3b.jpg",
@@ -27,7 +27,6 @@
     "static/media/education.png": "/My-Portfolio/static/media/education.386fe7da3eb2a2be8d55.png",
     "static/media/summary.png": "/My-Portfolio/static/media/summary.05ae589a33a000bc9059.png",
     "static/media/github.png": "/My-Portfolio/static/media/github.3770935f271dfa3d70d7.png",
-    "static/media/error.png": "/My-Portfolio/static/media/error.d13b2f563f8ebfce5fa7.png",
     "static/media/404.png": "/My-Portfolio/static/media/404.13d1fb51aa50188cd12b.png",
     "static/media/java.png": "/My-Portfolio/static/media/java.ddf8676bd569fe01ab44.png",
     "static/media/screenshots.png": "/My-Portfolio/static/media/screenshots.c88a44db648ffe56c90e.png",
@@ -44,12 +43,12 @@
     "static/media/typescript.png": "/My-Portfolio/static/media/typescript.af108db04a54d784da9b.png",
     "static/media/javascript.png": "/My-Portfolio/static/media/javascript.3dfb665e058d08c99f28.png",
     "index.html": "/My-Portfolio/index.html",
-    "main.da1cd70e.css.map": "/My-Portfolio/static/css/main.da1cd70e.css.map",
-    "main.016fce11.js.map": "/My-Portfolio/static/js/main.016fce11.js.map",
+    "main.02287fb2.css.map": "/My-Portfolio/static/css/main.02287fb2.css.map",
+    "main.ae49fa99.js.map": "/My-Portfolio/static/js/main.ae49fa99.js.map",
     "787.128fc6e9.chunk.js.map": "/My-Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.da1cd70e.css",
-    "static/js/main.016fce11.js"
+    "static/css/main.02287fb2.css",
+    "static/js/main.ae49fa99.js"
   ]
 }
