@@ -1,7 +1,4 @@
 import './App.css';
-import Header from './Components/Header/Header';
-import Footer from './Components/Footer/Footer';
-import Sidebar from './Components/Sidebar/Sidebar';
 import Main from './Components/Content/Main/Main';
 import Contact from './Components/Content/Contact/Contact';
 import Diploma from './Components/Content/Diploma/Diploma';
@@ -11,24 +8,22 @@ import { Route, Routes } from 'react-router-dom';
 import ImageSlider from './Components/Content/Projects/ImageSlider/ImageSlider';
 import NotFound from './Components/NotFound/NotFound';
 import NotDeployed from './Components/NotFound/NotDeployed';
-function App(props) {
+import Layout from './Layout';
+function App() {
   return (
     <div className="App">
-      <Header/>
-      <Sidebar/>
-      <div className="content">
-        <Routes>
-          <Route path='/' element={<Main />} />
-          <Route path='/diploma' element={<Diploma />} />
-          <Route path='/projects' element={<Projects />} />
-          <Route path='/contact' element={<Contact />} />
-          <Route path='/resume' element={<Resume />} />
-          <Route path='/projects/:projectId/screenshots' element={<ImageSlider/>}/>
-          <Route path='/notdeployed' element={<NotDeployed/>}/>
-          <Route path='*' element={<NotFound/>}/>
-        </Routes>
-      </div>
-      <Footer />
+      <Routes>
+        <Route path='/' element={<Layout />}>
+            <Route index element={<Main />} />
+              <Route path='diploma' element={<Diploma />} />
+              <Route path='projects' element={<Projects />} />
+              <Route path='contact' element={<Contact />} />
+              <Route path='resume' element={<Resume />} />
+              <Route path='projects/:projectId/screenshots' element={<ImageSlider />} />
+              <Route path='notdeployed' element={<NotDeployed />} />
+              <Route path='*' element={<NotFound />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
